@@ -255,8 +255,6 @@
     </div>
     <!-- end sidebar -->
 
-
-
 	<!-- main container -->
     <div class="content">
 
@@ -265,146 +263,131 @@
             <a href="#" class="skin first_nav selected">
                 <span class="icon"></span><span class="text">Default</span>
             </a>
-            <a href="#" class="skin second_nav" data-file="/first/Public/css/skins/dark.css">
+            <a href="#" class="skin second_nav" data-file="css/skins/dark.css">
                 <span class="icon"></span><span class="text">Dark skin</span>
             </a>
         </div>
 
         <div class="container-fluid">
-            <div id="pad-wrapper" class="users-list">
+            <div id="pad-wrapper" class="new-user">
                 <div class="row-fluid header">
-                    <h3>Users</h3>
-                    <div class="span10 pull-right">
-                        <input type="text" class="span5 search" placeholder="Type a user's name..." />
-                        <div class="ui-dropdown">
-                            <div class="head" data-toggle="tooltip" title="Click me!">
-                                Filter users
-                                <i class="arrow-down"></i>
-                            </div>
-                            <div class="dialog">
-                                <div class="pointer">
-                                    <div class="arrow"></div>
-                                    <div class="arrow_border"></div>
+                    <h3>Create a new user</h3>
+                </div>
+
+                <div class="row-fluid form-wrapper">
+                    <!-- left column -->
+                    <div class="span9 with-sidebar">
+                        <div class="container">
+                            <form class="new_user_form inline-input" />
+                                <div class="span12 field-box">
+                                    <label>姓名:</label>
+                                    <input class="span9" type="text" />
                                 </div>
-                                <div class="body">
-                                    <p class="title">
-                                        Show users where:
-                                    </p>
-                                    <div class="form">
+                                <div class="span12 field-box">
+                                    <label>地区:</label>
+                                    <div class="ui-select span5">
                                         <select>
-                                            <option />用户名
-                                            <option />邮箱
-                                            <option />Number of orders
-                                            <option />Signed up
-                                            <option />Last seen
+                                            <option value="AK" />Alaska
+                                            <option value="HI" />Hawaii
+                                            <option value="CA" />California
+                                            <option value="NV" />Nevada
+                                            <option value="OR" />Oregon
+                                            <option value="WA" />Washington
+                                            <option value="AZ" />Arizona
                                         </select>
-                                        <select>
-                                            <option />is equal to
-                                            <option />is not equal to
-                                            <option />is greater than
-                                            <option />starts with
-                                            <option />contains
-                                        </select>
-                                        <input type="text" />
-                                        <a class="btn-flat small">Add filter</a>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="span12 field-box">
+                                    <label>公司:</label>
+                                    <input class="span9" type="text" />
+                                </div>
+                                <div class="span12 field-box">
+                                    <label>Email:</label>
+                                    <input class="span9" type="text" />
+                                </div>
+                                <div class="span12 field-box">
+                                    <label>手机:</label>
+                                    <input class="span9" type="text" />
+                                </div>
+                                <div class="span12 field-box">
+                                    <label>网站:</label>
+                                    <input class="span9" type="text" />
+                                </div>
+                                <div class="span12 field-box">
+                                    <label>地址:</label>
+                                    <div class="address-fields">
+                                        <input class="span12" type="text" placeholder="Street address" />
+                                        <input class="span12 small" type="text" placeholder="City" />
+                                        <input class="span12 small" type="text" placeholder="State" />
+                                        <input class="span12 small last" type="text" placeholder="Postal Code" />
+                                    </div>
+                                </div>
+                                <div class="span12 field-box textarea">
+                                    <label>Notes:</label>
+                                    <textarea class="span9"></textarea>
+                                    <span class="charactersleft">90 characters remaining. Field limited to 100 characters</span>
+                                </div>
+                                <div class="span11 field-box actions">
+                                    <input type="button" class="btn-glow primary" value="Create user" />
+                                    <span>OR</span>
+                                    <input type="reset" value="Cancel" class="reset" />
+                                </div>
+                            </form>
                         </div>
+                    </div>
 
-                        <a href="new-user.html" class="btn-flat success pull-right">
-                            <span>&#43;</span>
-                            添加用户
-                        </a>
+                    <!-- side right column -->
+                    <div class="span3 form-sidebar pull-right">
+                        <div class="btn-group toggle-inputs hidden-tablet">
+                            <button class="glow left active" data-input="inline">INLINE INPUTS</button>
+                            <button class="glow right" data-input="normal">NORMAL INPUTS</button>
+                        </div>
+                        <div class="alert alert-info hidden-tablet">
+                            <i class="icon-lightbulb pull-left"></i>
+                            Click above to see difference between inline and normal inputs on a form
+                        </div>
+                        <h6>Sidebar text for instructions</h6>
+                        <p>Add multiple users at once</p>
+                        <p>Choose one of the following file types:</p>
+                        <ul>
+                            <li><a href="#">Upload a vCard file</a></li>
+                            <li><a href="#">Import from a CSV file</a></li>
+                            <li><a href="#">Import from an Excel file</a></li>
+                        </ul>
                     </div>
                 </div>
-
-                <!-- Users table -->
-                <div class="row-fluid table">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-															 <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
-															 <th  width=50>
-																	 ID
-															 </th>
-                                <th class="span4 sortable">
-                                    用户名
-                                </th>
-                                <th class="span3 sortable">
-                                    <span class="line"></span>注册时间
-                                </th>
-																<th class="span3 sortable">
-                                    <span class="line"></span>最后登录
-                                </th>
-                                <th class="span2 sortable">
-                                    <span class="line"></span>总消费
-                                </th>
-                                <th class="span3 sortable">
-                                    <span class="line"></span>邮箱
-                                </th>
-																<th class="span3 sortable">
-                                    <span class="line"></span>状态
-                                </th>
-																<th class="span3 sortable align-right">
-                                    <span class="line"></span>操作
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <!-- row -->
-                        <tr class="first">
-                        <!-- row -->
-												<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-													<td>
-															<input type="checkbox" value="<?php echo ($val["id"]); ?>" name="id[]">
-													</td>
-													<td>
-															<span class="subtext"><?php echo ($vo["uid"]); ?></span>
-													</td>
-                          <td>
-                              <a href="user-profile.html" class="name"><?php echo ($vo["nickname"]); ?></a>
-                          </td>
-                          <td>
-                            <?php echo (date("Y-m-d H:i:s",$vo["reg_time"])); ?>
-                          </td>
-													<td>
-                            <?php echo (date("Y-m-d H:i:s",$vo["last_login_time"])); ?>
-                          </td>
-                          <td>
-                              $ 549.99
-                          </td>
-                          <td>
-                              <a href="#"><?php echo ($vo["email"]); ?></a>
-                          </td>
-													<td>
-                              <?php if($vo['status'] == 1): ?>可用<?php else: ?>禁用<?php endif; ?>
-                          </td>
-													<td class="align-right">
-                              <a href="<?php echo U('Member/edit');?>">编辑</a>
-															<a href="#">删除</a>
-                          </td>
-                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="pagination pull-right">
-                    <ul>
-                        <li><a href="#">&#8249;</a></li>
-                        <li><a class="active" href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&#8250;</a></li>
-                    </ul>
-                </div>
-                <!-- end users table -->
             </div>
         </div>
     </div>
     <!-- end main container -->
 
-		
+
+	<!-- scripts -->
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            // toggle form between inline and normal inputs
+            var $buttons = $(".toggle-inputs button");
+            var $form = $("form.new_user_form");
+
+            $buttons.click(function () {
+                var mode = $(this).data("input");
+                $buttons.removeClass("active");
+                $(this).addClass("active");
+
+                if (mode === "inline") {
+                    $form.addClass("inline-input");
+                } else {
+                    $form.removeClass("inline-input");
+                }
+            });
+        });
+    </script>
+
+
 </body>
 </html>
