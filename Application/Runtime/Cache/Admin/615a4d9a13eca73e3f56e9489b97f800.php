@@ -278,10 +278,20 @@
                     <!-- left column -->
                     <div class="span9 with-sidebar">
                         <div class="container">
-                            <form class="new_user_form inline-input" />
+                          <?php if(empty($id)): ?><form action="<?php echo U('add');?>" method="post" name="myform" class="new_user_form inline-input">
+                            <?php else: ?>
+                            <form action="<?php echo U('edit');?>" method="post" name="myform" class="new_user_form inline-input"><?php endif; ?>
                                 <div class="span12 field-box">
                                     <label>姓名:</label>
-                                    <input class="span9" type="text" />
+                                    <input class="span9" type="text" value="<?php echo ($nickname); ?>"/>
+                                </div>
+                                <div class="span12 field-box">
+                                    <label>密码:</label>
+                                    <input class="span9" type="password" name="password" value="<?php echo ($password); ?>"/>
+                                </div>
+                                <div class="span12 field-box">
+                                    <label>确认密码:</label>
+                                    <input class="span9" type="password" name="repassword" value="<?php echo ($repassword); ?>"/>
                                 </div>
                                 <div class="span12 field-box">
                                     <label>地区:</label>

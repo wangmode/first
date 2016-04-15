@@ -126,7 +126,7 @@
                               <if condition="$vo['status'] eq 1">可用<else/>禁用</if>
                           </td>
 													<td class="align-right">
-                              <a href="{:U('Member/edit')}">编辑</a>
+                              <a href="{:U('Member/edit',array('id'=>$vo['uid']))}">编辑</a>
 															<a href="#">删除</a>
                           </td>
                         </tr>
