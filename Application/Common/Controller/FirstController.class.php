@@ -1,30 +1,17 @@
 <?php
 // +----------------------------------------------------------------------
-// | 系统公共函数库
+// | 公共基础控制器
 // +----------------------------------------------------------------------
-// | foreveryoung （永远年轻，永远热泪盈眶）
+// | ThinkOAO （Online And Offline）
 // +----------------------------------------------------------------------
-// | Copyright (c) 2016 http://foreveryoung.xin All rights reserved.
+// | Copyright (c) 2015 http://www.thinkoao.com All rights reserved.
 // +----------------------------------------------------------------------
-// | Author: WangMode <WangMode@163.cn>
+// | Author: xiaogg <xiaogg@sina.cn>
 // +----------------------------------------------------------------------
-
-//生成密码
-function creatpwd($pwd, $str = ''){
-  if(!$str){$str = randStr;}
-  $password = md5($pwd.$str);
-  return $password;
-}
-
-/**
- * 生成随机字符串
- * @return String
- */
-function randStr($length = 6,$chars = 'abcdefghijkmnpqrstuvwxyz123456789'){$randStr = str_shuffle($chars.$chars);return substr($randStr, 0, $length);}
-
-
-
- /**
+namespace Common\Controller;
+use Think\Controller;
+class FirstController extends Controller {
+    /**
      * 通用分页列表数据集获取方法
      *
      *  可以通过url参数传递where条件,例如:  index.html?name=asdfasdfasdfddds
@@ -42,14 +29,14 @@ function randStr($length = 6,$chars = 'abcdefghijkmnpqrstuvwxyz123456789'){$rand
      * @return array|false
      * 返回数据集
      */
-     function lists ($model,$where=array(),$order='',$base = '',$field=true,$pagesize='',$return='list',$pageconfig='',$pagetype=''){
+    public function lists ($model,$where=array(),$order='',$base = '',$field=true,$pagesize='',$return='list',$pageconfig='',$pagetype=''){
         $options    =   array();
         $REQUEST    =   (array)I('request.');
         if(is_string($model)){$model  =   M($model);}
         $OPT        =   new \ReflectionProperty($model,'options');
         $OPT->setAccessible(true);
         $pk         =   $model->getPk();
-        if($order===null){//order置空
+        if($order===null){//order置空           
         }else if ( isset($REQUEST['_order']) && isset($REQUEST['_field']) && in_array(strtolower($REQUEST['_order']),array('desc','asc')) ) {
             $options['order'] = '`'.$REQUEST['_field'].'` '.$REQUEST['_order'];
         }elseif( $order==='' && empty($options['order']) && !empty($pk) ){
@@ -64,7 +51,7 @@ function randStr($length = 6,$chars = 'abcdefghijkmnpqrstuvwxyz123456789'){$rand
         if(!empty($options['where'][$pp]))unset($options['where'][$pp]);
         if(!empty($options['where']['__hash__']))unset($options['where']['__hash__']);
         if( empty($options['where'])){unset($options['where']);}
-        $options      =   array_merge( (array)$OPT->getValue($model), $options );
+        $options      =   array_merge( (array)$OPT->getValue($model), $options );           
         $result['_total']=$total        =   !empty($options['where'])?$model->where($options['where'])->count():$model->count();
         if($pagesize)$listRows = intval($pagesize);
         else{$listRows = C('LIST_ROWS') > 0 ? C('LIST_ROWS') : 10;}
@@ -75,7 +62,7 @@ function randStr($length = 6,$chars = 'abcdefghijkmnpqrstuvwxyz123456789'){$rand
         if(empty($pageconfig))$pageconfig='%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%';
         $page->setConfig('theme',$pageconfig);
         if($pagetype==1){$page->prevshow=true;$page->nextshow=true;$page->setConfig('prev',L('PAGE_PREV'));$page->setConfig('next',L('PAGE_NEXT'));}
-        $result['_page']=$p =$page->show();$this->assign('_page', $p? $p: '');
+        $result['_page']=$p =$page->show();$this->assign('_page', $p? $p: '');        
         $options['limit'] = $page->firstRow.','.$page->listRows;
         }else{
             $options['limit'] ='0,'.$listRows;$this->assign('_page','');
@@ -84,3 +71,7 @@ function randStr($length = 6,$chars = 'abcdefghijkmnpqrstuvwxyz123456789'){$rand
         $result['list']=$model->alias("OAO__")->field($field)->select();
         return $return?$result[$return]:$result;
     }
+}
+    
+
+?>

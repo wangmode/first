@@ -374,29 +374,25 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
-															 <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
-															 <th  width=50>
-																	 ID
-															 </th>
+                                 <th width="30"><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
+                                 <th  width="50">ID</th>
                                 <th class="span4 sortable">
-                                    用户名
+                                    标识
                                 </th>
                                 <th class="span3 sortable">
-                                    <span class="line"></span>注册时间
+                                    <span class="line"></span>标题
                                 </th>
 																<th class="span3 sortable">
-                                    <span class="line"></span>最后登录
+                                    <span class="line"></span>分组
                                 </th>
                                 <th class="span2 sortable">
-                                    <span class="line"></span>总消费
+                                    <span class="line"></span>类型
                                 </th>
-                                <th class="span3 sortable">
-                                    <span class="line"></span>邮箱
-                                </th>
-																<th class="span3 sortable">
+
+								<th class="span3 sortable">
                                     <span class="line"></span>状态
                                 </th>
-																<th class="span3 sortable align-right">
+								<th class="span3 sortable align-right">
                                     <span class="line"></span>操作
                                 </th>
                             </tr>
@@ -405,34 +401,30 @@
                         <!-- row -->
                         <tr class="first">
                         <!-- row -->
-												<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-													<td>
-															<input type="checkbox" value="<?php echo ($val["id"]); ?>" name="id[]">
-													</td>
-													<td>
-															<span class="subtext"><?php echo ($vo["uid"]); ?></span>
-													</td>
+						<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+							<td>
+							<input type="checkbox" value="<?php echo ($val["id"]); ?>" name="id[]">
+							</td>
+							<td>
+							<span class="subtext"><?php echo ($vo["id"]); ?></span>
+							</td>
                           <td>
-                              <a href="user-profile.html" class="name"><?php echo ($vo["nickname"]); ?></a>
+                              <a href="user-profile.html" class="name"><?php echo ($vo["name"]); ?></a>
                           </td>
                           <td>
-                            <?php echo (date("Y-m-d H:i:s",$vo["reg_time"])); ?>
+                            <?php echo ($vo["title"]); ?>
                           </td>
-													<td>
+						  <td>
                             <?php echo (date("Y-m-d H:i:s",$vo["last_login_time"])); ?>
                           </td>
                           <td>
                               $ 549.99
                           </td>
-                          <td>
-                              <a href="#"><?php echo ($vo["email"]); ?></a>
-                          </td>
-													<td>
+						  <td>
                               <?php if($vo['status'] == 1): ?>可用<?php else: ?>禁用<?php endif; ?>
                           </td>
-													<td class="align-right">
-                              <a href="<?php echo U('Member/edit',array('id'=>$vo['uid']));?>">编辑</a>
-															<a href="#">删除</a>
+						  <td class="align-right">
+                              <a href="<?php echo U('Member/edit',array('id'=>$vo['uid']));?>">编辑</a><a href="#">删除</a>							
                           </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>

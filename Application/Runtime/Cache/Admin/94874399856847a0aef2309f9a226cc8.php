@@ -305,8 +305,6 @@
     </div>
     <!-- end sidebar -->
 
-
-
 	<!-- main container -->
     <div class="content">
 
@@ -315,146 +313,242 @@
             <a href="#" class="skin first_nav selected">
                 <span class="icon"></span><span class="text">Default</span>
             </a>
-            <a href="#" class="skin second_nav" data-file="/first/Public/css/skins/dark.css">
+            <a href="#" class="skin second_nav" data-file="css/skins/dark.css">
                 <span class="icon"></span><span class="text">Dark skin</span>
             </a>
         </div>
 
         <div class="container-fluid">
-            <div id="pad-wrapper" class="users-list">
-                <div class="row-fluid header">
-                    <h3>Users</h3>
-                    <div class="span10 pull-right">
-                        <input type="text" class="span5 search" placeholder="Type a user's name..." />
-                        <div class="ui-dropdown">
-                            <div class="head" data-toggle="tooltip" title="Click me!">
-                                Filter users
-                                <i class="arrow-down"></i>
+            <div id="pad-wrapper" class="form-page">
+                <div class="row-fluid form-wrapper">
+                    <!-- left column -->
+                    <div class="span8 column">
+                        <form />
+                            <div class="field-box">
+                                <label>Normal input:</label>
+                                <input class="span8" type="text" />
                             </div>
-                            <div class="dialog">
-                                <div class="pointer">
-                                    <div class="arrow"></div>
-                                    <div class="arrow_border"></div>
-                                </div>
-                                <div class="body">
-                                    <p class="title">
-                                        Show users where:
-                                    </p>
-                                    <div class="form">
-                                        <select>
-                                            <option />用户名
-                                            <option />邮箱
-                                            <option />Number of orders
-                                            <option />Signed up
-                                            <option />Last seen
-                                        </select>
-                                        <select>
-                                            <option />is equal to
-                                            <option />is not equal to
-                                            <option />is greater than
-                                            <option />starts with
-                                            <option />contains
-                                        </select>
-                                        <input type="text" />
-                                        <a class="btn-flat small">Add filter</a>
-                                    </div>
+                            <div class="field-box">
+                                <label>网站标题:</label>
+                                <input class="span8 inline-input" type="text" value="<?php echo ($WEB_SITE_TITLE); ?>"/>
+                            </div>
+                             <div class="field-box">
+                                <label>网站关键词:</label>
+                                <input class="span8 inline-input" type="text" />
+                            </div>
+                             <div class="field-box">
+                                <label>版权信息:</label>
+                                <input class="span8 inline-input" type="text" />
+                            </div>
+                            <div class="field-box">
+                                <label>Inline Password:</label>
+                                <input class="span8 inline-input" type="password" value="blablabla" />
+                            </div>
+                            <div class="field-box">
+                                <label>Read only:</label>
+                                <input class="span8 inline-input" type="text" readonly value="read only input" />
+                            </div>
+                            <div class="field-box">
+                                <label>With tooltip:</label>
+                                <input class="span8 inline-input" data-toggle="tooltip" data-trigger="focus" title="Please insert a valid email address" data-placement="right" type="text" />
+                            </div>
+                            <div class="field-box">
+                                <label>Predefined value:</label>
+                                <div class="predefined">
+                                    <span class="value">http://</span>
+                                    <input class="span8 inline-input" type="text" />
                                 </div>
                             </div>
-                        </div>
+                            <div class="field-box">
+                                <label>With max length:</label>
+                                <input class="span8 inline-input" type="text" placeholder="max 20 characters here" maxlength="20" />
+                            </div>
+                            <div class="field-box">
+                                <label>Textarea:</label>
+                                <textarea class="span8" rows="4"></textarea>
+                            </div>
+                            <div class="field-box">
+                                <label>Checkboxes:</label>
+                                <label class="checkbox">
+                                    <input type="checkbox" /> Option 1
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" /> Option 2
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" /> Option 3
+                                </label>
+                            </div>
+                            <div class="field-box">
+                                <label>Radiobuttons:</label>
+                                <div class="span8">
+                                    <label class="radio">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" />
+                                        Option one is this and that—be sure to include why it's great
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
+                                        Option two can be something else and selecting it will deselect option one
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="field-box">
+                                <label>Wysiwyg:</label>
+                                <div class="wysi-column">
+                                    <textarea id="wysi" class="span10 wysihtml5" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
 
-                        <a href="new-user.html" class="btn-flat success pull-right">
-                            <span>&#43;</span>
-                            添加用户
-                        </a>
+                    <!-- right column -->
+                    <div class="span4 column pull-right">
+                        <form />
+                            <div class="field-box">
+                                <label>Select:</label>
+                                <div class="ui-select">
+                                    <select>
+                                        <option selected="" />Dropdown
+                                        <option />Custom selects
+                                        <option />Pure css styles
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field-box">
+                                <label>Select2 plugin styled:</label>
+                                <select style="width:250px" class="select2">
+                                    <option />
+                                    <option value="AK" />Alaska
+                                    <option value="HI" />Hawaii
+                                    <option value="CA" />California
+                                    <option value="NV" />Nevada
+                                    <option value="OR" />Oregon
+                                    <option value="WA" />Washington
+                                    <option value="AZ" />Arizona
+                                    <option value="CO" />Colorado
+                                    <option value="ID" />Idaho
+                                    <option value="MT" />Montana
+                                    <option value="NE" />Nebraska
+                                    <option value="NM" />New Mexico
+                                    <option value="ND" />North Dakota
+                                    <option value="UT" />Utah
+                                    <option value="WY" />Wyoming
+                                    <option value="AL" />Alabama
+                                    <option value="AR" />Arkansas
+                                    <option value="IL" />Illinois
+                                    <option value="IA" />Iowa
+                                    <option value="KS" />Kansas
+                                    <option value="KY" />Kentucky
+                                    <option value="LA" />Louisiana
+                                    <option value="MN" />Minnesota
+                                    <option value="MS" />Mississippi
+                                    <option value="MO" />Missouri
+                                    <option value="OK" />Oklahoma
+                                    <option value="SD" />South Dakota
+                                    <option value="TX" />Texas
+                                    <option value="TN" />Tennessee
+                                    <option value="WI" />Wisconsin
+                                    <option value="CT" />Connecticut
+                                    <option value="DE" />Delaware
+                                    <option value="FL" />Florida
+                                    <option value="GA" />Georgia
+                                    <option value="IN" />Indiana
+                                    <option value="ME" />Maine
+                                    <option value="MD" />Maryland
+                                    <option value="MA" />Massachusetts
+                                    <option value="MI" />Michigan
+                                    <option value="NH" />New Hampshire
+                                    <option value="NJ" />New Jersey
+                                    <option value="NY" />New York
+                                    <option value="NC" />North Carolina
+                                    <option value="OH" />Ohio
+                                    <option value="PA" />Pennsylvania
+                                    <option value="RI" />Rhode Island
+                                    <option value="SC" />South Carolina
+                                    <option value="VT" />Vermont
+                                    <option value="VA" />Virginia
+                                    <option value="WV" />West Virginia
+                                </select>
+                            </div>
+                            <div class="field-box">
+                                <label>Select2 multiselect:</label>
+                                <select style="width:250px" multiple="" class="select2">
+                                    <option />
+                                    <option value="AK" />Alaska
+                                    <option value="HI" selected="" />Hawaii
+                                    <option value="CA" />California
+                                    <option value="NV" />Nevada
+                                    <option value="OR" />Oregon
+                                    <option value="WA" />Washington
+                                    <option value="AZ" />Arizona
+                                    <option value="CO" />Colorado
+                                    <option value="ID" />Idaho
+                                    <option value="MT" />Montana
+                                    <option value="NE" />Nebraska
+                                    <option value="NM" />New Mexico
+                                    <option value="ND" />North Dakota
+                                    <option value="UT" />Utah
+                                    <option value="WY" />Wyoming
+                                    <option value="AL" />Alabama
+                                    <option value="AR" />Arkansas
+                                    <option value="IL" />Illinois
+                                    <option value="IA" />Iowa
+                                    <option value="KS" />Kansas
+                                    <option value="KY" />Kentucky
+                                    <option value="LA" />Louisiana
+                                    <option value="MN" />Minnesota
+                                    <option value="MS" />Mississippi
+                                    <option value="MO" />Missouri
+                                    <option value="OK" />Oklahoma
+                                    <option value="SD" />South Dakota
+                                    <option value="TX" />Texas
+                                    <option value="TN" />Tennessee
+                                    <option value="WI" />Wisconsin
+                                    <option value="CT" />Connecticut
+                                    <option value="DE" />Delaware
+                                    <option value="FL" />Florida
+                                    <option value="GA" />Georgia
+                                    <option value="IN" />Indiana
+                                    <option value="ME" />Maine
+                                    <option value="MD" />Maryland
+                                    <option value="MA" />Massachusetts
+                                    <option value="MI" />Michigan
+                                    <option value="NH" />New Hampshire
+                                    <option value="NJ" />New Jersey
+                                    <option value="NY" />New York
+                                    <option value="NC" />North Carolina
+                                    <option value="OH" />Ohio
+                                    <option value="PA" />Pennsylvania
+                                    <option value="RI" />Rhode Island
+                                    <option value="SC" />South Carolina
+                                    <option value="VT" />Vermont
+                                    <option value="VA" />Virginia
+                                    <option value="WV" />West Virginia
+                                </select>
+                            </div>
+                            <div class="field-box">
+                                <label>Input prepend & append:</label>
+                                <div class="input-prepend">
+                                    <span class="add-on">@</span>
+                                    <input class="input-large" type="text" />
+                                </div>
+                                <div class="input-append">
+                                    <input class="input-large" type="text" />
+                                    <span class="add-on">.00</span>
+                                </div>
+                            </div>
+                            <div class="field-box">
+                                <label>Datepicker:</label>
+                                <input type="text" value="03/29/2014" class="input-large datepicker" />
+                            </div>
+                        </form>
                     </div>
                 </div>
-
-                <!-- Users table -->
-                <div class="row-fluid table">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-															 <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
-															 <th  width=50>
-																	 ID
-															 </th>
-                                <th class="span4 sortable">
-                                    用户名
-                                </th>
-                                <th class="span3 sortable">
-                                    <span class="line"></span>注册时间
-                                </th>
-																<th class="span3 sortable">
-                                    <span class="line"></span>最后登录
-                                </th>
-                                <th class="span2 sortable">
-                                    <span class="line"></span>总消费
-                                </th>
-                                <th class="span3 sortable">
-                                    <span class="line"></span>邮箱
-                                </th>
-																<th class="span3 sortable">
-                                    <span class="line"></span>状态
-                                </th>
-																<th class="span3 sortable align-right">
-                                    <span class="line"></span>操作
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <!-- row -->
-                        <tr class="first">
-                        <!-- row -->
-												<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-													<td>
-															<input type="checkbox" value="<?php echo ($val["id"]); ?>" name="id[]">
-													</td>
-													<td>
-															<span class="subtext"><?php echo ($vo["uid"]); ?></span>
-													</td>
-                          <td>
-                              <a href="user-profile.html" class="name"><?php echo ($vo["nickname"]); ?></a>
-                          </td>
-                          <td>
-                            <?php echo (date("Y-m-d H:i:s",$vo["reg_time"])); ?>
-                          </td>
-													<td>
-                            <?php echo (date("Y-m-d H:i:s",$vo["last_login_time"])); ?>
-                          </td>
-                          <td>
-                              $ 549.99
-                          </td>
-                          <td>
-                              <a href="#"><?php echo ($vo["email"]); ?></a>
-                          </td>
-													<td>
-                              <?php if($vo['status'] == 1): ?>可用<?php else: ?>禁用<?php endif; ?>
-                          </td>
-													<td class="align-right">
-                              <a href="<?php echo U('Member/edit',array('id'=>$vo['uid']));?>">编辑</a>
-															<a href="#">删除</a>
-                          </td>
-                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="pagination pull-right">
-                    <ul>
-                        <li><a href="#">&#8249;</a></li>
-                        <li><a class="active" href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&#8250;</a></li>
-                    </ul>
-                </div>
-                <!-- end users table -->
             </div>
         </div>
     </div>
     <!-- end main container -->
+	
 
-		
 </body>
 </html>

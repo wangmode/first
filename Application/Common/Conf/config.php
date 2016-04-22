@@ -18,12 +18,12 @@ return array (
 		'DB_TYPE' => 'mysql',
 		//'DB_HOST' => '106.3.38.6',
 		 'DB_HOST' => 'localhost',
-		'DB_NAME' => 'Anole',
+		'DB_NAME' => 'p2p',
 		'DB_USER' => 'root',
 		//'DB_PWD' => 'bq4DC10Q',
 		 'DB_PWD' => 'root',
 		'DB_PORT' => 3306,
-		'DB_PREFIX' => 'anl_',
+		'DB_PREFIX' => 'thinkoao_',
 		'email' => array (
 				'SMTP_HOST' => 'smtp.sina.cn', // SMTP服务器
 				'SMTP_PORT' => '465', // SMTP服务器端口

@@ -14,19 +14,63 @@
     <link rel="stylesheet" type="text/css" href="/first/Public/css/layout.css" />
     <link rel="stylesheet" type="text/css" href="/first/Public/css/elements.css" />
     <link rel="stylesheet" type="text/css" href="/first/Public/css/icons.css" />
-
+    
+    
+    
     <!-- libraries -->
+    <link href="/first/Public/css/lib/select2.css" type="text/css" rel="stylesheet" />
+    <link href="/first/Public/css/lib/bootstrap-wysihtml5.css" type="text/css" rel="stylesheet" />
+    <link href="/first/Public/css/lib/uniform.default.css" type="text/css" rel="stylesheet" />
+    
+    <link href="/first/Public/css/lib/bootstrap.datepicker.css" type="text/css" rel="stylesheet" />
     <link href="/first/Public/css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+    
+    
+    
+    
+     <link href="/first/Public/css/more.css" type="text/css" rel="stylesheet" />
+     
 
+    
     <!-- this page specific styles -->
     <link rel="stylesheet" href="/first/Public/css/compiled/user-list.css" type="text/css" media="screen" />
-
+    <link rel="stylesheet" href="/first/Public/css/compiled/form-showcase.css" type="text/css" media="screen" />
+    
 		<!-- scripts -->
-		  <script src="/first/Public/js/jquery-latest.js"></script>
-		  <script src="/first/Public/js/bootstrap.min.js"></script>
-		  <script src="/first/Public/js/theme.js"></script>
+    <script src="/first/Public/js/wysihtml5-0.3.0.js"></script>
+    <script src="/first/Public/js/jquery-latest.js"></script>
+    <script src="/first/Public/js/bootstrap.min.js"></script>
+    <script src="/first/Public/js/bootstrap-wysihtml5-0.0.2.js"></script>
+    <script src="/first/Public/js/bootstrap.datepicker.js"></script>
+    <script src="/first/Public/js/jquery.uniform.min.js"></script>
+    <script src="/first/Public/js/select2.min.js"></script>
+    <script src="/first/Public/js/theme.js"></script>
+
 
     <!-- open sans font -->
+    
+    <script type="text/javascript">
+        $(function () {
+
+            // add uniform plugin styles to html elements
+            $("input:checkbox, input:radio").uniform();
+
+            // select2 plugin for select elements
+            $(".select2").select2({
+                placeholder: "Select a State"
+            });
+
+            // datepicker plugin
+            $('.datepicker').datepicker().on('changeDate', function (ev) {
+                $(this).datepicker('hide');
+            });
+
+            // wysihtml5 plugin on textarea
+            $(".wysihtml5").wysihtml5({
+                "font-styles": false
+            });
+        });
+    </script>
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -233,9 +277,15 @@
                 </ul>
             </li>
             <li>
-                <a href="personal-info.html">
+                <a class="dropdown-toggle" href="#">
                     <i class="icon-cog"></i>
-                    <span>My Info</span>
+                    <span>系统设置</span>
+					<i class="icon-chevron-down"></i>
+					<ul class="submenu">
+	                    <li><a href="<?php echo U('Setting/index');?>" class="active">网站设置</a></li>
+	                    <li><a href="<?php echo U('Member/edit');?>">添加会员</a></li>
+	                    <li><a href="user-profile.html">会员概况</a></li>
+	                </ul>
                 </a>
             </li>
             <li>
