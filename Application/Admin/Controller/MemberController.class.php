@@ -3,7 +3,7 @@ namespace Admin\Controller;
 use Think\Controller;
 class MemberController extends Controller {
     public function index(){
-      $member = M('member')->select();
+      $member = M('member')->order('reg_time desc')->select();
       $this->assign('list',$member);
       $this->display();
 	}
@@ -13,7 +13,9 @@ class MemberController extends Controller {
 
     $member = D('Member');
     if(IS_POST){
+        $this->error('两次密码输入不一致');
       $postdata = I('post.');
+
       $count = $member->where('id!=' . $id . ' and username=' . $postdata['username'])->count();
       if($count>0){
         $this->error('用户名已经存在！');
@@ -28,14 +30,10 @@ class MemberController extends Controller {
         }
       }
 
-    }
-
-
-
-    // if ($id) {
-    //   $info = M('Member')->where('uid='.$id)->find();
-    // }
-    // $this->assign($info);
+  }else{
+        $info = M('Member')->where('id='.$id)->find();
+  }
+    $this->assign($info);
     $this->display();
   }
 }

@@ -84,3 +84,62 @@ function randStr($length = 6,$chars = 'abcdefghijkmnpqrstuvwxyz123456789'){$rand
         $result['list']=$model->alias("OAO__")->field($field)->select();
         return $return?$result[$return]:$result;
     }
+
+
+
+    /**
+* 字符串转换为数组 用于 tag
+*/
+function strtoarray($str,$type='key'){
+    if(is_array($str))return $str;
+    if(empty($str))return false;
+    $array=array();$typekey='key';
+    if(str_exists($str,'typeid_'))
+	{
+		$typeid=floor(strtr($str,array('typeid_'=>'','temp_'=>'')));
+        if(str_exists($str,'temp_')){$type='temp';}
+        if($typeid)$array=gettypeson($typeid,$type);
+	}
+    if(!$array){
+        $str=str_replace(PHP_EOL,',',$str);
+        $strarr=array_map('trim',explode(',', $str));
+        $array =array_values(array_filter($strarr));
+    }
+    foreach ($array as $k=> $v) {
+        if (strpos($v, '|')) {$varr = explode('|', $v);
+            $return[$varr[0]] = str_exists($varr[1],'LAN_')?L(str_replace('LAN_','',$varr[1])):$varr[1];
+        }else{
+           if(strpos($v,':')){$varr = explode(':', $v);
+                $return[$varr[0]] = str_exists($varr[1],'LAN_')?L(str_replace('LAN_','',$varr[1])):$varr[1];
+           }else{$arrkey=$typekey=='key'?$k:$v;
+                $return[$arrkey] =str_exists($v,'LAN_')?L(str_replace('LAN_','',$v)):$v;}
+       }
+    }return $return;
+}
+
+
+/**
+ * 调用系统的API接口方法（静态方法）
+ * api('User/getName','id=5'); 调用公共模块的User接口的getName方法
+ * api('Admin/User/getName','id=5');  调用Admin模块的User接口
+ * @param  string  $name 格式 [模块名]/接口名/方法名
+ * @param  array|string  $vars 参数
+ */
+function api($name, $vars = array()){
+    $array = explode('/', $name);
+    $method = array_pop($array);
+    $classname = array_pop($array);
+    $module = $array ? array_pop($array) : 'Common';
+    $callback = $module . '\\Api\\' . $classname . 'Api::'.$method;
+    if (is_string($vars)) {parse_str($vars, $vars);}
+    return call_user_func_array($callback, $vars);
+}
+
+/**
+ * 查询字符是否存在于某字符串
+ *
+ * @param $haystack 字符串
+ * @param $needle 要查找的字符
+ * @return bool
+ */
+function str_exists($haystack, $needle){return !(strpos($haystack, $needle) === FALSE);}

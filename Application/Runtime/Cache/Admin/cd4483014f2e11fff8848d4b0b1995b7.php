@@ -410,16 +410,16 @@
 															<input type="checkbox" value="<?php echo ($val["id"]); ?>" name="id[]">
 													</td>
 													<td>
-															<span class="subtext"><?php echo ($vo["uid"]); ?></span>
+															<span class="subtext"><?php echo ($vo["id"]); ?></span>
 													</td>
                           <td>
-                              <a href="user-profile.html" class="name"><?php echo ($vo["nickname"]); ?></a>
+                              <a href="user-profile.html" class="name"><?php echo ($vo["username"]); ?></a>
                           </td>
                           <td>
                             <?php echo (date("Y-m-d H:i:s",$vo["reg_time"])); ?>
                           </td>
 													<td>
-                            <?php echo (date("Y-m-d H:i:s",$vo["last_login_time"])); ?>
+                            <?php echo (date("Y-m-d H:i:s",$vo["last_login"])); ?>
                           </td>
                           <td>
                               $ 549.99
@@ -431,7 +431,7 @@
                               <?php if($vo['status'] == 1): ?>可用<?php else: ?>禁用<?php endif; ?>
                           </td>
 													<td class="align-right">
-                              <a href="<?php echo U('Member/edit',array('id'=>$vo['uid']));?>">编辑</a>
+                              <a href="<?php echo U('Member/edit',array('id'=>$vo['id']));?>">编辑</a>
 															<a href="#">删除</a>
                           </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>

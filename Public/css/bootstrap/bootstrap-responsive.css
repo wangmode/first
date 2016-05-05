@@ -229,9 +229,6 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .row-fluid [class*="span"]:first-child {
-    margin-left: 0;
-  }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
     margin-left: 2.564102564102564%;
   }
@@ -278,6 +275,10 @@
   .row-fluid .span2 {
     width: 14.52991452991453%;
     *width: 14.476723040552828%;
+  }
+  .row-fluid .span1_2 {
+    width: 10.982905982905983%;
+    *width: 10.929714493544281%;
   }
   .row-fluid .span1 {
     width: 5.982905982905983%;
@@ -579,9 +580,6 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .row-fluid [class*="span"]:first-child {
-    margin-left: 0;
-  }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
     margin-left: 2.7624309392265194%;
   }
@@ -632,6 +630,10 @@
   .row-fluid .span1 {
     width: 5.801104972375691%;
     *width: 5.747913483013988%;
+  }
+  .row-fluid .span0 {
+    width: 8.801104972375691%;
+    *width: 8.747913483013988%;
   }
   .row-fluid .offset12 {
     margin-left: 105.52486187845304%;

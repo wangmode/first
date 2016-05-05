@@ -105,16 +105,16 @@
 															<input type="checkbox" value="{$val.id}" name="id[]">
 													</td>
 													<td>
-															<span class="subtext">{$vo.uid}</span>
+															<span class="subtext">{$vo.id}</span>
 													</td>
                           <td>
-                              <a href="user-profile.html" class="name">{$vo.nickname}</a>
+                              <a href="user-profile.html" class="name">{$vo.username}</a>
                           </td>
                           <td>
                             {$vo.reg_time|date="Y-m-d H:i:s",###}
                           </td>
 													<td>
-                            {$vo.last_login_time|date="Y-m-d H:i:s",###}
+                            {$vo.last_login|date="Y-m-d H:i:s",###}
                           </td>
                           <td>
                               $ 549.99
@@ -126,7 +126,7 @@
                               <if condition="$vo['status'] eq 1">可用<else/>禁用</if>
                           </td>
 													<td class="align-right">
-                              <a href="{:U('Member/edit',array('id'=>$vo['uid']))}">编辑</a>
+                              <a href="{:U('Member/edit',array('id'=>$vo['id']))}">编辑</a>
 															<a href="#">删除</a>
                           </td>
                         </tr>

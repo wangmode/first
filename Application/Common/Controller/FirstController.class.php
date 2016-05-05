@@ -11,6 +11,13 @@
 namespace Common\Controller;
 use Think\Controller;
 class FirstController extends Controller {
+	public function _initialize(){
+		header("content-Type: text/html; charset=utf-8");
+		$this->config=S('DB_CONFIG_DATA');/* 读取数据库中的配置 */
+		if(empty($this->config)){$this->config = api('Config/lists');S('DB_CONFIG_DATA',$this->config);}C($this->config); //添加配置
+	}
+
+
     /**
      * 通用分页列表数据集获取方法
      *
@@ -36,7 +43,7 @@ class FirstController extends Controller {
         $OPT        =   new \ReflectionProperty($model,'options');
         $OPT->setAccessible(true);
         $pk         =   $model->getPk();
-        if($order===null){//order置空           
+        if($order===null){//order置空
         }else if ( isset($REQUEST['_order']) && isset($REQUEST['_field']) && in_array(strtolower($REQUEST['_order']),array('desc','asc')) ) {
             $options['order'] = '`'.$REQUEST['_field'].'` '.$REQUEST['_order'];
         }elseif( $order==='' && empty($options['order']) && !empty($pk) ){
@@ -51,7 +58,7 @@ class FirstController extends Controller {
         if(!empty($options['where'][$pp]))unset($options['where'][$pp]);
         if(!empty($options['where']['__hash__']))unset($options['where']['__hash__']);
         if( empty($options['where'])){unset($options['where']);}
-        $options      =   array_merge( (array)$OPT->getValue($model), $options );           
+        $options      =   array_merge( (array)$OPT->getValue($model), $options );
         $result['_total']=$total        =   !empty($options['where'])?$model->where($options['where'])->count():$model->count();
         if($pagesize)$listRows = intval($pagesize);
         else{$listRows = C('LIST_ROWS') > 0 ? C('LIST_ROWS') : 10;}
@@ -62,7 +69,7 @@ class FirstController extends Controller {
         if(empty($pageconfig))$pageconfig='%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%';
         $page->setConfig('theme',$pageconfig);
         if($pagetype==1){$page->prevshow=true;$page->nextshow=true;$page->setConfig('prev',L('PAGE_PREV'));$page->setConfig('next',L('PAGE_NEXT'));}
-        $result['_page']=$p =$page->show();$this->assign('_page', $p? $p: '');        
+        $result['_page']=$p =$page->show();$this->assign('_page', $p? $p: '');
         $options['limit'] = $page->firstRow.','.$page->listRows;
         }else{
             $options['limit'] ='0,'.$listRows;$this->assign('_page','');
@@ -72,6 +79,6 @@ class FirstController extends Controller {
         return $return?$result[$return]:$result;
     }
 }
-    
+
 
 ?>
