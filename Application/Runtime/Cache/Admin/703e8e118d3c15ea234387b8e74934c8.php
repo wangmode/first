@@ -220,7 +220,7 @@
                     <span>Charts</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <div class="pointer">
                     <div class="arrow"></div>
                     <div class="arrow_border"></div>
@@ -230,7 +230,7 @@
                     <span>会员</span>
                     <i class="icon-chevron-down"></i>
                 </a>
-                <ul class="active submenu">
+                <ul class="submenu">
                     <li><a href="<?php echo U('Member/index');?>" class="active">会员列表</a></li>
                     <li><a href="<?php echo U('Member/edit');?>">添加会员</a></li>
                     <li><a href="user-profile.html">会员概况</a></li>
@@ -283,7 +283,7 @@
 					<i class="icon-chevron-down"></i>
 					<ul class="submenu">
 	                    <li><a href="<?php echo U('Setting/index');?>" class="active">网站设置</a></li>
-	                    <li><a href="<?php echo U('Member/edit');?>">添加会员</a></li>
+	                    <li><a href="<?php echo U('Setting/config');?>">配置管理</a></li>
 	                    <li><a href="user-profile.html">会员概况</a></li>
 	                </ul>
                 </a>
@@ -323,7 +323,7 @@
         <div class="container-fluid">
             <div id="pad-wrapper" class="users-list">
                 <div class="row-fluid header">
-                    <h3>Users</h3>
+                    <h3>配置列表</h3>
                     <div class="span10 pull-right">
                         <input type="text" class="span5 search" placeholder="Type a user's name..." />
                         <div class="ui-dropdown">
@@ -361,10 +361,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <a href="new-user.html" class="btn-flat success pull-right">
+                        <a href="<?php echo U('Setting/add');?>" class="btn-flat success pull-right">
                             <span>&#43;</span>
-                            添加用户
+                            添加配置
                         </a>
                     </div>
                 </div>

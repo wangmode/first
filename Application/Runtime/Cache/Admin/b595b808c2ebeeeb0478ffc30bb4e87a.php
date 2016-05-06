@@ -230,9 +230,15 @@
                 </ul>
             </li>
             <li>
-                <a href="personal-info.html">
+                <a class="dropdown-toggle" href="#">
                     <i class="icon-cog"></i>
-                    <span>My Info</span>
+                    <span>系统设置</span>
+					<i class="icon-chevron-down"></i>
+					<ul class="submenu">
+	                    <li><a href="<?php echo U('Setting/index');?>" class="active">网站设置</a></li>
+	                    <li><a href="<?php echo U('Member/edit');?>">添加会员</a></li>
+	                    <li><a href="user-profile.html">会员概况</a></li>
+	                </ul>
                 </a>
             </li>
             <li>

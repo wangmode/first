@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 	<title>管理中心</title>
@@ -6,45 +6,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- bootstrap -->
-    <link href="__PUBLIC__/css/bootstrap/bootstrap.css" rel="stylesheet" />
-    <link href="__PUBLIC__/css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
-    <link href="__PUBLIC__/css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+    <link href="/first/Public/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="/first/Public/css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="/first/Public/css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
 
     <!-- global styles -->
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/elements.css" />
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/first/Public/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="/first/Public/css/elements.css" />
+    <link rel="stylesheet" type="text/css" href="/first/Public/css/icons.css" />
     
     
     
     <!-- libraries -->
-    <link href="__PUBLIC__/css/lib/select2.css" type="text/css" rel="stylesheet" />
-    <link href="__PUBLIC__/css/lib/bootstrap-wysihtml5.css" type="text/css" rel="stylesheet" />
-    <link href="__PUBLIC__/css/lib/uniform.default.css" type="text/css" rel="stylesheet" />
+    <link href="/first/Public/css/lib/select2.css" type="text/css" rel="stylesheet" />
+    <link href="/first/Public/css/lib/bootstrap-wysihtml5.css" type="text/css" rel="stylesheet" />
+    <link href="/first/Public/css/lib/uniform.default.css" type="text/css" rel="stylesheet" />
     
-    <link href="__PUBLIC__/css/lib/bootstrap.datepicker.css" type="text/css" rel="stylesheet" />
-    <link href="__PUBLIC__/css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
-    
-    
+    <link href="/first/Public/css/lib/bootstrap.datepicker.css" type="text/css" rel="stylesheet" />
+    <link href="/first/Public/css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
     
     
-     <link href="__PUBLIC__/css/more.css" type="text/css" rel="stylesheet" />
+    
+    
+     <link href="/first/Public/css/more.css" type="text/css" rel="stylesheet" />
      
 
     
     <!-- this page specific styles -->
-    <link rel="stylesheet" href="__PUBLIC__/css/compiled/user-list.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="__PUBLIC__/css/compiled/form-showcase.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/first/Public/css/compiled/user-list.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/first/Public/css/compiled/form-showcase.css" type="text/css" media="screen" />
     
 		<!-- scripts -->
-    <script src="__PUBLIC__/js/wysihtml5-0.3.0.js"></script>
-    <script src="__PUBLIC__/js/jquery-latest.js"></script>
-    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
-    <script src="__PUBLIC__/js/bootstrap-wysihtml5-0.0.2.js"></script>
-    <script src="__PUBLIC__/js/bootstrap.datepicker.js"></script>
-    <script src="__PUBLIC__/js/jquery.uniform.min.js"></script>
-    <script src="__PUBLIC__/js/select2.min.js"></script>
-    <script src="__PUBLIC__/js/theme.js"></script>
+    <script src="/first/Public/js/wysihtml5-0.3.0.js"></script>
+    <script src="/first/Public/js/jquery-latest.js"></script>
+    <script src="/first/Public/js/bootstrap.min.js"></script>
+    <script src="/first/Public/js/bootstrap-wysihtml5-0.0.2.js"></script>
+    <script src="/first/Public/js/bootstrap.datepicker.js"></script>
+    <script src="/first/Public/js/jquery.uniform.min.js"></script>
+    <script src="/first/Public/js/select2.min.js"></script>
+    <script src="/first/Public/js/theme.js"></script>
 
 
     <!-- open sans font -->
@@ -87,7 +87,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="brand" href="index.html"><img src="__ROOT__/Application/Admin/View/img/logo.png" /></a>
+            <a class="brand" href="index.html"><img src="/first/Application/Admin/View/img/logo.png" /></a>
 
             <ul class="nav pull-right">
                 <li class="hidden-phone">
@@ -147,7 +147,7 @@
                             <a href="#" class="close-icon"><i class="icon-remove-sign"></i></a>
                             <div class="messages">
                                 <a href="#" class="item">
-                                    <img src="__ROOT__/Application/Admin/View/img/contact-img.png" class="display" />
+                                    <img src="/first/Application/Admin/View/img/contact-img.png" class="display" />
                                     <div class="name">Alejandra Galván</div>
                                     <div class="msg">
                                         There are many variations of available, but the majority have suffered alterations.
@@ -155,7 +155,7 @@
                                     <span class="time"><i class="icon-time"></i> 13 min.</span>
                                 </a>
                                 <a href="#" class="item">
-                                    <img src="__ROOT__/Application/Admin/View/img/contact-img2.png" class="display" />
+                                    <img src="/first/Application/Admin/View/img/contact-img2.png" class="display" />
                                     <div class="name">Alejandra Galván</div>
                                     <div class="msg">
                                         There are many variations of available, have suffered alterations.
@@ -163,7 +163,7 @@
                                     <span class="time"><i class="icon-time"></i> 26 min.</span>
                                 </a>
                                 <a href="#" class="item last">
-                                    <img src="__ROOT__/Application/Admin/View/img/contact-img.png" class="display" />
+                                    <img src="/first/Application/Admin/View/img/contact-img.png" class="display" />
                                     <div class="name">Alejandra Galván</div>
                                     <div class="msg">
                                         There are many variations of available, but the majority have suffered alterations.
@@ -209,7 +209,7 @@
     <div id="sidebar-nav">
         <ul id="dashboard-menu">
             <li>
-                <a href="{:U('Index/index')}">
+                <a href="<?php echo U('Index/index');?>">
                     <i class="icon-home"></i>
                     <span>主页</span>
                 </a>
@@ -231,8 +231,8 @@
                     <i class="icon-chevron-down"></i>
                 </a>
                 <ul class="submenu">
-                    <li><a href="{:U('Member/index')}" class="active">会员列表</a></li>
-                    <li><a href="{:U('Member/edit')}">添加会员</a></li>
+                    <li><a href="<?php echo U('Member/index');?>" class="active">会员列表</a></li>
+                    <li><a href="<?php echo U('Member/edit');?>">添加会员</a></li>
                     <li><a href="user-profile.html">会员概况</a></li>
                 </ul>
             </li>
@@ -282,8 +282,8 @@
                     <span>系统设置</span>
 					<i class="icon-chevron-down"></i>
 					<ul class="submenu">
-	                    <li><a href="{:U('Setting/index')}" class="active">网站设置</a></li>
-	                    <li><a href="{:U('Setting/config')}">配置管理</a></li>
+	                    <li><a href="<?php echo U('Setting/index');?>" class="active">网站设置</a></li>
+	                    <li><a href="<?php echo U('Setting/config');?>">配置管理</a></li>
 	                    <li><a href="user-profile.html">会员概况</a></li>
 	                </ul>
                 </a>
@@ -304,3 +304,77 @@
         </ul>
     </div>
     <!-- end sidebar -->
+
+	<!-- main container -->
+    <div class="content">
+
+        <!-- settings changer -->
+        <div class="skins-nav">
+            <a href="#" class="skin first_nav selected">
+                <span class="icon"></span><span class="text">Default</span>
+            </a>
+            <a href="#" class="skin second_nav" data-file="css/skins/dark.css">
+                <span class="icon"></span><span class="text">Dark skin</span>
+            </a>
+        </div>
+
+        <div class="container-fluid">
+            <div id="pad-wrapper" class="form-page">
+                <div class="row-fluid form-wrapper">
+                    <!-- left column -->
+                    <div class="span8 column">
+                        <form >
+                            <div class="field-box">
+                                <label>配置标识:</label>
+                                <input class="span4 inline-input" type="text" value="<?php echo ($WEB_SITE_TITLE); ?>"/>
+                            </div>
+                             <div class="field-box">
+                                <label>标题:</label>
+                                <input class="span4 inline-input" type="text" />
+                            </div>
+                            <div class="field-box">
+                                <label>分组:</label>
+                                <div class="ui-select">
+                                    <select>
+                                    	<?php if(is_array($GROUP_LIST)): $i = 0; $__LIST__ = $GROUP_LIST;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option selected="" value="<?php echo ($key); ?>"/><?php echo ($vo); endforeach; endif; else: echo "" ;endif; ?>
+                                    </select>
+                            	</div>
+                            </div>
+                             <div class="field-box">
+                                <label>排序:</label>
+                                <input class="span4 inline-input" type="text" />
+                            </div>
+
+
+                            <div class="field-box">
+                                <label>是否:</label>
+                                <div class="span8">
+                                    <label class="radio">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" />
+                                        是
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
+                                        否
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="field-box">
+                                <label>Wysiwyg:</label>
+                                <div class="wysi-column">
+                                    <textarea id="wysi" class="span10 wysihtml5" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+	
+
+</body>
+</html>

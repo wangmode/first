@@ -220,7 +220,7 @@
                     <span>Charts</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <div class="pointer">
                     <div class="arrow"></div>
                     <div class="arrow_border"></div>
@@ -230,7 +230,7 @@
                     <span>会员</span>
                     <i class="icon-chevron-down"></i>
                 </a>
-                <ul class="active submenu">
+                <ul class="submenu">
                     <li><a href="<?php echo U('Member/index');?>" class="active">会员列表</a></li>
                     <li><a href="<?php echo U('Member/edit');?>">添加会员</a></li>
                     <li><a href="user-profile.html">会员概况</a></li>
@@ -283,7 +283,7 @@
 					<i class="icon-chevron-down"></i>
 					<ul class="submenu">
 	                    <li><a href="<?php echo U('Setting/index');?>" class="active">网站设置</a></li>
-	                    <li><a href="<?php echo U('Member/edit');?>">添加会员</a></li>
+	                    <li><a href="<?php echo U('Setting/config');?>">配置管理</a></li>
 	                    <li><a href="user-profile.html">会员概况</a></li>
 	                </ul>
                 </a>
@@ -331,18 +331,18 @@
                           <?php if(empty($id)): ?><form action="<?php echo U('add');?>" method="post" name="myform" class="new_user_form inline-input">
                             <?php else: ?>
                             <form action="<?php echo U('edit');?>" method="post" name="myform" class="new_user_form inline-input"><?php endif; ?>
-                                <div class="span12 field-box">
+                                <div class="span7 field-box">
                                     <label>姓名:</label>
                                     <input class="span9" type="text" value="<?php echo ($nickname); ?>"/>
                                 </div>
-                                <div class="span12 field-box">
+                                 <?php if(empty($id)): ?><div class="span12 field-box">
                                     <label>密码:</label>
-                                    <input class="span9" type="password" name="password" />
+                                    <input class="span7" type="password" name="password" />
                                 </div>
                                 <div class="span12 field-box">
                                     <label>确认密码:</label>
-                                    <input class="span9" type="password" name="repassword"/>
-                                </div>
+                                    <input class="span7" type="password" name="repassword"/>
+                                </div><?php endif; ?>
                                 <div class="span12 field-box">
                                     <label>地区:</label>
                                     <div class="ui-select span3">
@@ -357,26 +357,22 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="span12 field-box" style="margin-top:10px">
-                                    <label>公司:</label>
-                                    <input class="span9" type="text" />
-                                </div>
-                                <div class="span12 field-box">
+                                <div class="span7 field-box" style="margin-top:10px">
                                     <label>Email:</label>
-                                    <input class="span9" type="text" />
+                                    <input class="span9" type="text" value="<?php echo ($email); ?>"/>
                                 </div>
-                                <div class="span12 field-box">
+                                <div class="span7 field-box">
                                     <label>手机:</label>
-                                    <input class="span9" type="text" />
+                                    <input class="span9" type="text" value="<?php echo ($mobile); ?>"/>
                                 </div>
-                                <div class="span12 field-box">
+                                <div class="span7 field-box">
                                     <label>网站:</label>
                                     <input class="span9" type="text" />
                                 </div>
                                 <div class="span12 field-box">
                                     <label>地址:</label>
                                     <div class="address-fields">
-                                        <input class="span12" type="text"/>
+                                        <input class="span9" type="text" value="<?php echo ($address); ?>"/>
                                     </div>
                                 </div>
                                 <div class="span12 field-box textarea">
@@ -386,7 +382,7 @@
                                 </div>
                                 <div class="span11 field-box actions">
                                     <input type="submit" class="btn-glow primary span1_2" value="确认" />
-                                    <input type="button" value="取消" class="btn-flat info span1_2 offset1" onclick="javascript:history.back(-1);return false;"/>
+                                    <input type="button" value="取消" class="btn-flat info span1_2" onclick="javascript:history.back(-1);return false;"/>
                                 </div>
                             </form>
                         </div>

@@ -35,4 +35,13 @@ class SettingController extends FirstController {
 	$this->display();
 
 	}
+	
+	public function add(){
+		$grouplist=strtoarray(C('CONFIG_GROUP_LIST'));
+        $grouplist[0]='隐藏';
+		$this->assign('TYPE_LIST',strtoarray(C('CONFIG_TYPE_LIST')));
+		$this->assign('GROUP_LIST',$grouplist);
+		$this->assign('info',null);
+		$this->display();
+	}
 }

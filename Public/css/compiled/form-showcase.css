@@ -32,7 +32,7 @@
   .form-page .form-wrapper label.radio {
     position: relative;
     left: -20px;
-    width: 100%;
+    width: 40px;
     cursor: pointer;
     color: #555; }
   .form-page .form-wrapper label.checkbox,

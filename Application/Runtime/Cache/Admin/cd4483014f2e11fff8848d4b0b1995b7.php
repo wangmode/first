@@ -220,7 +220,7 @@
                     <span>Charts</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <div class="pointer">
                     <div class="arrow"></div>
                     <div class="arrow_border"></div>
@@ -230,7 +230,7 @@
                     <span>会员</span>
                     <i class="icon-chevron-down"></i>
                 </a>
-                <ul class="active submenu">
+                <ul class="submenu">
                     <li><a href="<?php echo U('Member/index');?>" class="active">会员列表</a></li>
                     <li><a href="<?php echo U('Member/edit');?>">添加会员</a></li>
                     <li><a href="user-profile.html">会员概况</a></li>
@@ -283,7 +283,7 @@
 					<i class="icon-chevron-down"></i>
 					<ul class="submenu">
 	                    <li><a href="<?php echo U('Setting/index');?>" class="active">网站设置</a></li>
-	                    <li><a href="<?php echo U('Member/edit');?>">添加会员</a></li>
+	                    <li><a href="<?php echo U('Setting/config');?>">配置管理</a></li>
 	                    <li><a href="user-profile.html">会员概况</a></li>
 	                </ul>
                 </a>
