@@ -423,7 +423,8 @@
                               <?php if($vo['status'] == 1): ?>可用<?php else: ?>禁用<?php endif; ?>
                           </td>
 						  <td class="align-right">
-                              <a href="<?php echo U('Member/edit',array('id'=>$vo['uid']));?>">编辑</a><a href="#">删除</a>							
+                              <a href="<?php echo U('Setting/edit',array('id'=>$vo['uid']));?>">编辑</a>
+                              <a href="#">删除</a>							
                           </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>

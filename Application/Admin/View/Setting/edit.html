@@ -17,7 +17,7 @@
                 <div class="row-fluid form-wrapper">
                     <!-- left column -->
                     <div class="span8 column">
-                        <form >
+                        <form  id="form" action="{:U('Config/insert')}" method="post">
                             <div class="field-box">
                                 <label>配置标识:</label>
                                 <input class="span4 inline-input" type="text" value="{$WEB_SITE_TITLE}"/>
@@ -56,10 +56,14 @@
                                 </div>
                             </div>
                             <div class="field-box">
-                                <label>Wysiwyg:</label>
+                                <label>描述:</label>
                                 <div class="wysi-column">
                                     <textarea id="wysi" class="span10 wysihtml5" rows="5"></textarea>
                                 </div>
+                            </div>
+                            <div class="span11 field-box actions">
+                                    <input type="submit" class="btn-glow primary span1_2" value="确认" />
+                                    <input type="button" value="取消" class="btn-flat info span1_2" onclick="javascript:history.back(-1);return false;"/>
                             </div>
                         </form>
                     </div>

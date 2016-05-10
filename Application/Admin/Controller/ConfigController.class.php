@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 use Common\Controller\FirstController;
-class SettingController extends FirstController {
+class ConfigController extends FirstController {
     public function _initialize() {
         parent::_initialize();
     }
@@ -46,6 +46,9 @@ class SettingController extends FirstController {
 	}
 
     public function insert(){
-        
+        $name = CONTROLLER_NAME;
+		$model = D ($name);
+		$info = I('post.');
+		print_r($info);exit;
     }
 }

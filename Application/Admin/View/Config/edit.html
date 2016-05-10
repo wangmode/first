@@ -1,0 +1,78 @@
+<include file="Public/header" />
+	<!-- main container -->
+    <div class="content">
+
+        <!-- settings changer -->
+        <div class="skins-nav">
+            <a href="#" class="skin first_nav selected">
+                <span class="icon"></span><span class="text">Default</span>
+            </a>
+            <a href="#" class="skin second_nav" data-file="css/skins/dark.css">
+                <span class="icon"></span><span class="text">Dark skin</span>
+            </a>
+        </div>
+
+        <div class="container-fluid">
+            <div id="pad-wrapper" class="form-page">
+                <div class="row-fluid form-wrapper">
+                    <!-- left column -->
+                    <div class="span8 column">
+                        <form  id="form" action="{:U('Config/insert')}" method="post">
+                            <div class="field-box">
+                                <label>配置标识:</label>
+                                <input class="span4 inline-input" type="text" value="{$WEB_SITE_TITLE}" name="name"/>
+                            </div>
+                             <div class="field-box">
+                                <label>标题:</label>
+                                <input class="span4 inline-input" type="text" name="title"/>
+                            </div>
+                            <div class="field-box">
+                                <label>分组:</label>
+                                <div class="ui-select">
+                                    <select name="group">
+                                    	<volist name="GROUP_LIST" id="vo">
+                                        <option selected="" value="{$key}"/>{$vo}
+										</volist>
+                                    </select>
+                            	</div>
+                            </div>
+                             <div class="field-box">
+                                <label>排序:</label>
+                                <input class="span4 inline-input" type="text" name="sort"/>
+                            </div>
+
+
+                            <div class="field-box">
+                                <label>状态:</label>
+                                <div class="span8">
+                                    <label class="radio">
+                                        <input type="radio" name="status" id="optionsRadios1" value="0" checked="" />
+                                        启用
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="status" id="optionsRadios2" value="1" />
+                                        禁用
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="field-box">
+                                <label>描述:</label>
+                                <div class="wysi-column">
+                                    <textarea id="wysi" class="span10 wysihtml5" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="span11 field-box actions">
+                                    <input type="submit" class="btn-glow primary span1_2" value="确认" />
+                                    <input type="button" value="取消" class="btn-flat info span1_2" onclick="javascript:history.back(-1);return false;"/>
+                            </div>
+                        </form>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+	
+<include file="Public/footer" />
