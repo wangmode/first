@@ -282,8 +282,8 @@
                     <span>系统设置</span>
 					<i class="icon-chevron-down"></i>
 					<ul class="submenu">
-	                    <li><a href="<?php echo U('Setting/index');?>" class="active">网站设置</a></li>
-	                    <li><a href="<?php echo U('Setting/config');?>">配置管理</a></li>
+	                    <li><a href="<?php echo U('Config/index');?>" class="active">网站设置</a></li>
+	                    <li><a href="<?php echo U('Config/config');?>">配置管理</a></li>
 	                    <li><a href="user-profile.html">会员概况</a></li>
 	                </ul>
                 </a>
@@ -323,7 +323,7 @@
         <div class="container-fluid">
             <div id="pad-wrapper" class="users-list">
                 <div class="row-fluid header">
-                    <h3>Users</h3>
+                    <h3>用户列表</h3>
                     <div class="span10 pull-right">
                         <input type="text" class="span5 search" placeholder="Type a user's name..." />
                         <div class="ui-dropdown">
@@ -362,7 +362,7 @@
                             </div>
                         </div>
 
-                        <a href="new-user.html" class="btn-flat success pull-right">
+                        <a href="<?php echo U('Member/add');?>" class="btn-flat success pull-right">
                             <span>&#43;</span>
                             添加用户
                         </a>
@@ -374,10 +374,9 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
-															 <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
-															 <th  width=50>
-																	 ID
-															 </th>
+								 <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
+								 <th  width=50>ID
+								 </th>
                                 <th class="span4 sortable">
                                     用户名
                                 </th>
@@ -386,9 +385,6 @@
                                 </th>
 																<th class="span3 sortable">
                                     <span class="line"></span>最后登录
-                                </th>
-                                <th class="span2 sortable">
-                                    <span class="line"></span>总消费
                                 </th>
                                 <th class="span3 sortable">
                                     <span class="line"></span>邮箱
@@ -405,24 +401,20 @@
                         <!-- row -->
                         <tr class="first">
                         <!-- row -->
-												<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-													<td>
-															<input type="checkbox" value="<?php echo ($val["id"]); ?>" name="id[]">
-													</td>
-													<td>
-															<span class="subtext"><?php echo ($vo["id"]); ?></span>
-													</td>
-                          <td>
+						<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><td>
+								<input type="checkbox" value="<?php echo ($val["id"]); ?>" name="id[]">
+						</td>
+						<td>
+								<span class="subtext"><?php echo ($vo["id"]); ?></span>
+						</td>
+                        <td>
                               <a href="user-profile.html" class="name"><?php echo ($vo["username"]); ?></a>
                           </td>
                           <td>
                             <?php echo (date("Y-m-d H:i:s",$vo["reg_time"])); ?>
                           </td>
-													<td>
+						  <td>
                             <?php echo (date("Y-m-d H:i:s",$vo["last_login"])); ?>
-                          </td>
-                          <td>
-                              $ 549.99
                           </td>
                           <td>
                               <a href="#"><?php echo ($vo["email"]); ?></a>

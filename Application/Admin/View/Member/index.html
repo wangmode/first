@@ -17,7 +17,7 @@
         <div class="container-fluid">
             <div id="pad-wrapper" class="users-list">
                 <div class="row-fluid header">
-                    <h3>Users</h3>
+                    <h3>用户列表</h3>
                     <div class="span10 pull-right">
                         <input type="text" class="span5 search" placeholder="Type a user's name..." />
                         <div class="ui-dropdown">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
 
-                        <a href="new-user.html" class="btn-flat success pull-right">
+                        <a href="{:U('Member/add')}" class="btn-flat success pull-right">
                             <span>&#43;</span>
                             添加用户
                         </a>
@@ -68,10 +68,9 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
-															 <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
-															 <th  width=50>
-																	 ID
-															 </th>
+								 <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
+								 <th  width=50>ID
+								 </th>
                                 <th class="span4 sortable">
                                     用户名
                                 </th>
@@ -80,9 +79,6 @@
                                 </th>
 																<th class="span3 sortable">
                                     <span class="line"></span>最后登录
-                                </th>
-                                <th class="span2 sortable">
-                                    <span class="line"></span>总消费
                                 </th>
                                 <th class="span3 sortable">
                                     <span class="line"></span>邮箱
@@ -99,25 +95,21 @@
                         <!-- row -->
                         <tr class="first">
                         <!-- row -->
-												<volist name="list" id="vo">
-                        <tr>
-													<td>
-															<input type="checkbox" value="{$val.id}" name="id[]">
-													</td>
-													<td>
-															<span class="subtext">{$vo.id}</span>
-													</td>
-                          <td>
+						<volist name="list" id="vo">
+						<td>
+								<input type="checkbox" value="{$val.id}" name="id[]">
+						</td>
+						<td>
+								<span class="subtext">{$vo.id}</span>
+						</td>
+                        <td>
                               <a href="user-profile.html" class="name">{$vo.username}</a>
                           </td>
                           <td>
                             {$vo.reg_time|date="Y-m-d H:i:s",###}
                           </td>
-													<td>
+						  <td>
                             {$vo.last_login|date="Y-m-d H:i:s",###}
-                          </td>
-                          <td>
-                              $ 549.99
                           </td>
                           <td>
                               <a href="#">{$vo.email}</a>

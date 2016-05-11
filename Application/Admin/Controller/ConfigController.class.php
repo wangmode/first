@@ -1,17 +1,25 @@
 <?php
+// +----------------------------------------------------------------------
+// | UniSoft [ WE Can Do Everything ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2016 http://www.wanghome.cn All rights reserved.
+// +----------------------------------------------------------------------
+// | Author: 汪之厌胃<WangMode@163.com>
+// +----------------------------------------------------------------------
 namespace Admin\Controller;
 use Think\Controller;
 use Common\Controller\FirstController;
 class ConfigController extends FirstController {
     public function _initialize() {
         parent::_initialize();
+        $this->model = D('Config');
     }
     public function index(){
 	$info = M('Config')->select();
 	$this->assign($info);
     $this->display();
 	}
-
+    //配置列表
 	public function config() {
         $list = strtoarray(C('CONFIG_TYPE_LIST'));
         /* 查询条件初始化 */
@@ -35,20 +43,52 @@ class ConfigController extends FirstController {
 	$this->display();
 
 	}
-
+    //添加配置
 	public function add(){
-		$grouplist=strtoarray(C('CONFIG_GROUP_LIST'));
-        $grouplist[0]='隐藏';
-		$this->assign('TYPE_LIST',strtoarray(C('CONFIG_TYPE_LIST')));
-		$this->assign('GROUP_LIST',$grouplist);
-		$this->assign('info',null);
-		$this->display('edit');
+        if(IS_POST){
+            $data = $this->model->create();
+            if($data){
+                if($this->model->add()){
+                    $this->success('新增成功', U('index'));
+                } else {
+                    $this->error('新增失败');
+                }
+            } else {
+                $this->error($this->model->getError());
+            }
+        }else{
+            $grouplist=strtoarray(C('CONFIG_GROUP_LIST'));
+            $grouplist[0]='隐藏';
+    		$this->assign('TYPE_LIST',strtoarray(C('CONFIG_TYPE_LIST')));
+    		$this->assign('GROUP_LIST',$grouplist);
+    		$this->assign('info',null);
+    		$this->display('edit');
+        }
 	}
-
-    public function insert(){
-        $name = CONTROLLER_NAME;
-		$model = D ($name);
-		$info = I('post.');
-		print_r($info);exit;
+    //编辑配置
+    public function edit(){
+        if(IS_POST){
+            $data = $this->model->create();
+            if($data){
+                if($this->model->save()){
+                    $this->success('更新成功');
+                } else {
+                    $this->error('更新失败');
+                }
+            } else {
+                $this->error($this->model->getError());
+            }
+        }else{
+            $id = I('id');
+            $info = $this->model->field(true)->find($id);
+            print_r($info);
+            $grouplist=strtoarray(C('CONFIG_GROUP_LIST'));
+            $grouplist[0]='隐藏';
+    		$this->assign('TYPE_LIST',strtoarray(C('CONFIG_TYPE_LIST')));
+    		$this->assign('GROUP_LIST',$grouplist);
+    		$this->assign($info);
+    		$this->display('edit');
+        }
     }
+
 }

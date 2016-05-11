@@ -46,6 +46,7 @@ class SettingController extends FirstController {
 	}
 
     public function insert(){
-        
+        $data = I('post.');
+        print_r($data);exit;
     }
 }

@@ -361,7 +361,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="<?php echo U('Setting/add');?>" class="btn-flat success pull-right">
+                        <a href="<?php echo U('Config/add');?>" class="btn-flat success pull-right">
                             <span>&#43;</span>
                             添加配置
                         </a>
@@ -423,8 +423,8 @@
                               <?php if($vo['status'] == 1): ?>可用<?php else: ?>禁用<?php endif; ?>
                           </td>
 						  <td class="align-right">
-                              <a href="<?php echo U('Setting/edit',array('id'=>$vo['uid']));?>">编辑</a>
-                              <a href="#">删除</a>							
+                              <a href="<?php echo U('Config/edit',array('id'=>$vo['id']));?>">编辑</a>
+                              <a href="#">删除</a>
                           </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>

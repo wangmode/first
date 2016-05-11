@@ -282,8 +282,8 @@
                     <span>系统设置</span>
 					<i class="icon-chevron-down"></i>
 					<ul class="submenu">
-	                    <li><a href="<?php echo U('Setting/index');?>" class="active">网站设置</a></li>
-	                    <li><a href="<?php echo U('Setting/config');?>">配置管理</a></li>
+	                    <li><a href="<?php echo U('Config/index');?>" class="active">网站设置</a></li>
+	                    <li><a href="<?php echo U('Config/config');?>">配置管理</a></li>
 	                    <li><a href="user-profile.html">会员概况</a></li>
 	                </ul>
                 </a>
@@ -323,7 +323,7 @@
                 <div class="row-fluid form-wrapper">
                     <!-- left column -->
                     <div class="span8 column">
-                        <form  id="form" action="<?php echo U('Setting/insert');?>" method="post">
+                        <form  id="form" action="<?php echo U('Config/insert');?>" method="post">
                             <div class="field-box">
                                 <label>配置标识:</label>
                                 <input class="span4 inline-input" type="text" value="<?php echo ($WEB_SITE_TITLE); ?>"/>

@@ -323,71 +323,50 @@
                 <div class="row-fluid form-wrapper">
                     <!-- left column -->
                     <div class="span8 column">
-                        <?php if(empty($id)): ?><form  id="form" action="<?php echo U('Config/add');?>" method="post">
-                        <?php else: ?>
-                        <form  id="form" action="<?php echo U('Config/edit');?>" method="post"><?php endif; ?>
+                        <form />
                             <div class="field-box">
-                                <label>配置标识:</label>
-                                <input class="span4 inline-input" type="text" name="name" value="<?php echo ($name); ?>"/>
+                                <label>网站标题:</label>
+                                <input class="span8 inline-input" type="text" value="<?php echo ($WEB_SITE_TITLE); ?>"/>
                             </div>
                              <div class="field-box">
-                                <label>标题:</label>
-                                <input class="span4 inline-input" type="text" name="title" value="<?php echo ($title); ?>"/>
-                            </div>
-                            <div class="field-box">
-                                <label>分组:</label>
-                                <div class="ui-select">
-                                    <select name="group">
-                                    	<?php if(is_array($GROUP_LIST)): $i = 0; $__LIST__ = $GROUP_LIST;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option selected="" value="<?php echo ($key); ?>"/><?php echo ($vo); endforeach; endif; else: echo "" ;endif; ?>
-                                    </select>
-                            	</div>
-                            </div>
-                            <div class="field-box">
-                                <label>分组:</label>
-                                <div class="ui-select">
-                                    <select name="group">
-                                    	<?php if(is_array($TYPE_LIST)): $i = 0; $__LIST__ = $TYPE_LIST;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><option selected="" value="<?php echo ($key); ?>"/><?php echo ($val); endforeach; endif; else: echo "" ;endif; ?>
-                                    </select>
-                            	</div>
+                                <label>网站关键词:</label>
+                                <input class="span8 inline-input" type="text" />
                             </div>
                              <div class="field-box">
-                                <label>排序:</label>
-                                <input class="span4 inline-input" type="text" name="sort" value="<?php echo ($sort); ?>"/>
+                                <label>版权信息:</label>
+                                <input class="span8 inline-input" type="text" />
                             </div>
                             <div class="field-box">
-                                <label>配置值:</label>
-                                <textarea class="span4" rows="2" name="value"><?php echo ($value); ?></textarea>
+                                <label>Inline Password:</label>
+                                <input class="span8 inline-input" type="password" value="blablabla" />
                             </div>
                             <div class="field-box">
-                                <label>配置项:</label>
-                                <textarea class="span4" rows="2" name="extra"><?php echo ($extra); ?></textarea>
+                                <label>Read only:</label>
+                                <input class="span8 inline-input" type="text" readonly value="read only input" />
                             </div>
                             <div class="field-box">
-                                <label>状态:</label>
-                                <div class="span8">
-                                    <label class="radio">
-                                        <input type="radio" name="status" id="optionsRadios1" value="1" checked="" />
-                                        启用
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="status" id="optionsRadios2" value="0" />
-                                        禁用
-                                    </label>
+                                <label>With tooltip:</label>
+                                <input class="span8 inline-input" data-toggle="tooltip" data-trigger="focus" title="Please insert a valid email address" data-placement="right" type="text" />
+                            </div>
+                            <div class="field-box">
+                                <label>Predefined value:</label>
+                                <div class="predefined">
+                                    <span class="value">http://</span>
+                                    <input class="span8 inline-input" type="text" />
                                 </div>
                             </div>
                             <div class="field-box">
-                                <label>描述:</label>
-                                <textarea class="span5" rows="4" name="remark"><?php echo ($remark); ?></textarea>
+                                <label>With max length:</label>
+                                <input class="span8 inline-input" type="text" placeholder="max 20 characters here" maxlength="20" />
                             </div>
-                            <input type="hidden" name="id" value="<?php echo ($id); ?>" />
-                            <div class="span11 field-box actions">
-                                    <input type="submit" class="btn-flat inverse span1_2" value="确认" />
-                                    <input type="button" value="取消" class="btn-flat info span1_2" onclick="javascript:history.back(-1);return false;"/>
+                            <div class="field-box">
+                                <label>Textarea:</label>
+                                <textarea class="span8" rows="4"></textarea>
                             </div>
+
+
                         </form>
                     </div>
-
-
                 </div>
             </div>
         </div>

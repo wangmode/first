@@ -282,8 +282,8 @@
                     <span>系统设置</span>
 					<i class="icon-chevron-down"></i>
 					<ul class="submenu">
-	                    <li><a href="<?php echo U('Setting/index');?>" class="active">网站设置</a></li>
-	                    <li><a href="<?php echo U('Setting/config');?>">配置管理</a></li>
+	                    <li><a href="<?php echo U('Config/index');?>" class="active">网站设置</a></li>
+	                    <li><a href="<?php echo U('Config/config');?>">配置管理</a></li>
 	                    <li><a href="user-profile.html">会员概况</a></li>
 	                </ul>
                 </a>
@@ -333,7 +333,7 @@
                             <form action="<?php echo U('edit');?>" method="post" name="myform" class="new_user_form inline-input"><?php endif; ?>
                                 <div class="span7 field-box">
                                     <label>姓名:</label>
-                                    <input class="span9" type="text" value="<?php echo ($nickname); ?>"/>
+                                    <input class="span9" type="text" name="username" value="<?php echo ($username); ?>"/>
                                 </div>
                                  <?php if(empty($id)): ?><div class="span12 field-box">
                                     <label>密码:</label>
@@ -359,26 +359,30 @@
                                 </div>
                                 <div class="span7 field-box" style="margin-top:10px">
                                     <label>Email:</label>
-                                    <input class="span9" type="text" value="<?php echo ($email); ?>"/>
+                                    <input class="span9" type="text" value="<?php echo ($email); ?>" name="email"/>
                                 </div>
                                 <div class="span7 field-box">
                                     <label>手机:</label>
-                                    <input class="span9" type="text" value="<?php echo ($mobile); ?>"/>
-                                </div>
-                                <div class="span7 field-box">
-                                    <label>网站:</label>
-                                    <input class="span9" type="text" />
+                                    <input class="span9" type="text" value="<?php echo ($mobile); ?>" name='mobile'/>
                                 </div>
                                 <div class="span12 field-box">
                                     <label>地址:</label>
                                     <div class="address-fields">
-                                        <input class="span9" type="text" value="<?php echo ($address); ?>"/>
+                                        <input class="span9" type="text" value="<?php echo ($address); ?>" name="address"/>
                                     </div>
                                 </div>
-                                <div class="span12 field-box textarea">
-                                    <label>描述:</label>
-                                    <textarea class="span9"></textarea>
-                                    
+                                <div class="field-box">
+                                    <label>状态:</label>
+                                    <div class="span8">
+                                        <label class="radio">
+                                            <input type="radio" name="status" id="optionsRadios1" value="1" checked="" />
+                                            启用
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="status" id="optionsRadios2" value="0" />
+                                            禁用
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="span11 field-box actions">
                                     <input type="submit" class="btn-glow primary span1_2" value="确认" />
