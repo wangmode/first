@@ -319,7 +319,7 @@
         </div>
 
         <div class="container-fluid">
-            <div id="pad-wrapper" class="new-user">
+            <div id="pad-wrapper" class="form-page">
                 <div class="row-fluid header">
                     <h3>会员信息</h3>
                 </div>
@@ -371,14 +371,14 @@
                                         <input class="span9" type="text" value="<?php echo ($address); ?>" name="address"/>
                                     </div>
                                 </div>
-                                <div class="field-box">
+                                <div class="span12 field-box">
                                     <label>状态:</label>
                                     <div class="span8">
-                                        <label class="radio">
+                                        <label class="radio" style="width:60px;">
                                             <input type="radio" name="status" id="optionsRadios1" value="1" checked="" />
                                             启用
                                         </label>
-                                        <label class="radio">
+                                        <label class="radio" style="width:60px;">
                                             <input type="radio" name="status" id="optionsRadios2" value="0" />
                                             禁用
                                         </label>

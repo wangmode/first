@@ -15,6 +15,7 @@ class FirstController extends Controller {
 		header("content-Type: text/html; charset=utf-8");
 		$this->config=S('DB_CONFIG_DATA');/* 读取数据库中的配置 */
 		if(empty($this->config)){$this->config = api('Config/lists');S('DB_CONFIG_DATA',$this->config);}C($this->config); //添加配置
+		$this->TEMPLATE_PATH=__ROOT__.substr(APP_PATH,1).C('DEFAULT_MODULE').'/'.C('DEFAULT_V_LAYER').'/';
 	}
 
 
