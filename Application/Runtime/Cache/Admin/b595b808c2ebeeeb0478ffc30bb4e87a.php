@@ -39,53 +39,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="brand" href="index.html"><img src="/first/Application/Admin/View/img/logo.png" /></a>
-
             <ul class="nav pull-right">
-                <li class="hidden-phone">
-                    <input class="search" type="text" />
-                </li>
-                <li class="notification-dropdown hidden-phone">
-                    <a href="#" class="trigger">
-                        <i class="icon-warning-sign"></i>
-                        <span class="count">8</span>
-                    </a>
-                    <div class="pop-dialog">
-                        <div class="pointer right">
-                            <div class="arrow"></div>
-                            <div class="arrow_border"></div>
-                        </div>
-                        <div class="body">
-                            <a href="#" class="close-icon"><i class="icon-remove-sign"></i></a>
-                            <div class="notifications">
-                                <h3>You have 6 new notifications</h3>
-                                <a href="#" class="item">
-                                    <i class="icon-signin"></i> New user registration
-                                    <span class="time"><i class="icon-time"></i> 13 min.</span>
-                                </a>
-                                <a href="#" class="item">
-                                    <i class="icon-signin"></i> New user registration
-                                    <span class="time"><i class="icon-time"></i> 18 min.</span>
-                                </a>
-                                <a href="#" class="item">
-                                    <i class="icon-envelope-alt"></i> New message from Alejandra
-                                    <span class="time"><i class="icon-time"></i> 28 min.</span>
-                                </a>
-                                <a href="#" class="item">
-                                    <i class="icon-signin"></i> New user registration
-                                    <span class="time"><i class="icon-time"></i> 49 min.</span>
-                                </a>
-                                <a href="#" class="item">
-                                    <i class="icon-download-alt"></i> New order placed
-                                    <span class="time"><i class="icon-time"></i> 1 day.</span>
-                                </a>
-                                <div class="footer">
-                                    <a href="#" class="logout">View all notifications</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
                 <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
                 <li class="notification-dropdown hidden-phone">
                     <a href="#" class="trigger">
@@ -132,7 +86,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
-                        Your account
+                        <?php echo ($username); ?>
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -149,7 +103,7 @@
                     </a>
                 </li>
                 <li class="settings hidden-phone">
-                    <a href="signin.html" role="button">
+                    <a href="<?php echo U('Login/logout');?>" role="button">
                         <i class="icon-share-alt"></i>
                     </a>
                 </li>
@@ -184,19 +138,18 @@
                     <i class="icon-chevron-down"></i>
                 </a>
                 <ul class="submenu">
-                    <li><a href="<?php echo U('member/index');?>">User list</a></li>
-                    <li><a href="new-user.html">New user form</a></li>
-                    <li><a href="user-profile.html">User profile</a></li>
+                    <li><a href="<?php echo U('member/index');?>">会员列表</a></li>
+                    <li><a href="<?php echo U('member/add');?>">添加会员</a></li>
                 </ul>
             </li>
             <li>
                 <a class="dropdown-toggle" href="#">
                     <i class="icon-edit"></i>
-                    <span>Forms</span>
+                    <span>房源管理</span>
                     <i class="icon-chevron-down"></i>
                 </a>
                 <ul class="submenu">
-                    <li><a href="form-showcase.html">Form showcase</a></li>
+                    <li><a href="form-showcase.html">房源列表</a></li>
                     <li><a href="form-wizard.html">Form wizard</a></li>
                 </ul>
             </li>

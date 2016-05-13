@@ -17,6 +17,19 @@ function creatpwd($pwd, $str = ''){
 }
 
 /**
+ * 检测用户是否登录
+ * @return integer 0-未登录，大于0-当前登录用户ID
+ */
+function is_login($admin = '1'){
+    $loginarr=array('member_info','admin_info');
+    $authname = $loginarr[$admin];
+    $user = session($authname);
+    if (empty($user)) {return 0;} else {
+        return $user[$authname . '_auth_sign'] == data_auth_sign($user) ? $user['id'] : 0;
+    }
+}
+
+/**
  * 生成随机字符串
  * @return String
  */
@@ -143,3 +156,19 @@ function api($name, $vars = array()){
  * @return bool
  */
 function str_exists($haystack, $needle){return !(strpos($haystack, $needle) === FALSE);}
+
+
+/**
+ * 数据签名认证
+ * @param  array  $data 被认证的数据
+ * @return string       签名
+ */
+function data_auth_sign($data){
+    //数据类型检测
+    if (!is_array($data)) {$data = (array )$data;}
+    unset($data['admin_info_auth_sign'],$data['member_info_auth_sign']);
+    ksort($data); //排序
+    $code = http_build_query($data); //url编码并生成query字符串
+    $sign = sha1($code); //生成签名
+    return $sign;
+}

@@ -19,6 +19,7 @@ class Cx extends TagLib {
     protected $tags   =  array(
         // 标签定义： attr 属性列表 close 是否闭合（0 或者1 默认1） alias 标签别名 level 嵌套层次
         'php'       =>  array(),
+		'area'      =>  array('attr'=>'id,name,title,notitle,class,width,level','close'=>1),
         'volist'    =>  array('attr'=>'name,id,offset,length,key,mod','level'=>3,'alias'=>'iterate'),
         'foreach'   =>  array('attr'=>'name,item,key','level'=>3),
         'if'        =>  array('attr'=>'condition','level'=>2),
@@ -566,6 +567,46 @@ class Cx extends TagLib {
         $parseStr   =   '<?php define('.$name.', '.$value.'); ?>';
         return $parseStr;
     }
+		    /**
+     * area 地区标签
+     * 格式： <oao:area name="area">{$content}</oao:area>
+     */
+	public function _area($tag,$content)
+	{	
+        $name   	=!empty($tag['name'])?$tag['name']:'area';
+		$id			=!empty($tag['id'])?$tag['id']:'area';
+        $level   	=!empty($tag['level'])?$tag['level']:'';
+		$width		=!empty($tag['width'])?$tag['width']:'75';
+		$title      =!empty($tag['title'])?$tag['title']:'请选择';
+        $class      =!empty($tag['class'])?$tag['class']:'form-control selinkagea';
+		$notitle    =!empty($tag['notitle'])?$tag['notitle']:'';		
+		$ldclass=$id.'_area';$parseStr='';
+		if(!$notitle){$infotitle=array("省","市","县");
+			foreach($infotitle as $k =>$tv){$t[($k+1)]=$title.$tv;}
+		}
+        if(str_exists($name,'|')){
+            $idarr=$namearr=explode('|','|'.$name);
+        }else{
+		$nameid=array('sheng','shi','xian');
+		foreach($nameid as $k => $v)
+		{
+			$namearr[($k+1)]=$name."_".$v;
+			$idarr[($k+1)]=$id."_".$v;
+		}}
+		$parseStr .="<script type=\"text/javascript\">";
+		$parseStr .="$(function(){"."$(\".".$ldclass."\").ld({ajaxOptions: {\"url\":\"".U('Home/Ajax/linkarea')."\"},\"defaultParentId\" : 1,";
+		if($content){$parseStr .="texts : [".$content."],";}
+		$parseStr .="style:{\"width\" : ".$width."}});})";
+	    $parseStr .="</script>";
+		 for($i=1; $i<=3;$i++){
+			 if($i<=$level || !$level){
+				$parseStr .="<select class=\"".$ldclass." ".$class."\" name=\"".$namearr[$i]."\" id=\"".$idarr[$i]."\">";
+				$parseStr .="<option value=\"\">".$t[$i]."</option>";
+				$parseStr .="</select>";
+			}
+		}
+		return $parseStr;		
+	}
     
     /**
      * for标签解析

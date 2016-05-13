@@ -5,8 +5,8 @@
 <title>跳转提示</title>
 <style type="text/css">
 *{ padding: 0; margin: 0; }
-body{ background: #30333F; font-family: '微软雅黑'; color: #fff; font-size: 16px; }
-.system-message{ padding: 24px 48px; }
+body{ background: #290C0C; font-family: '微软雅黑'; color: #fff; font-size: 16px; }
+.system-message{ padding: 24px 100px; }
 .system-message h1{ font-size: 80px; font-weight: normal; line-height: 120px; margin-bottom: 12px }
 .system-message .jump{ padding-top: 10px;margin-bottom:20px}
 .system-message .jump a{ color: #333;}
@@ -24,7 +24,7 @@ body{ background: #30333F; font-family: '微软雅黑'; color: #fff; font-size: 
     vertical-align: middle;
     cursor: pointer;
     border: 0 none;
-    background-color: #308B04;
+    background-color: #8B0000;
     padding: 10px 20px;
     color: #fff;
     font-weight: bold;
@@ -33,14 +33,14 @@ body{ background: #30333F; font-family: '微软雅黑'; color: #fff; font-size: 
 }
 
 #btn-stop:hover,#href:hover{
-    background-color: #43BD08;
+    background-color: #ff0000;
 }
 </style>
 </head>
 <body>
 <div class="system-message" style="width:30%;margin: 150px auto;">
-<h1>恭喜您!</h1>
-<p class="success"><?php echo($message); ?></p>
+<h1>恭喜您！</h1>
+<p class="error"><?php echo($error); ?></p>
 <p class="detail"></p>
 <p class="jump">
 <b id="wait"><?php echo($waitSecond); ?></b> 秒后页面将自动跳转
@@ -48,6 +48,7 @@ body{ background: #30333F; font-family: '微软雅黑'; color: #fff; font-size: 
 <div>
     <a id="href" id="btn-now" href="<?php echo($jumpUrl); ?>">立即跳转</a> 
     <button id="btn-stop" type="button" onclick="stop()">停止跳转</button> 
+    <a id="href" id="btn-now" href="<?php echo(U('Public/logout')); ?>">重新登录</a> 
 </div>
 </div>
 <script type="text/javascript">
