@@ -14,28 +14,28 @@
     <link rel="stylesheet" type="text/css" href="/first/Public/css/layout.css" />
     <link rel="stylesheet" type="text/css" href="/first/Public/css/elements.css" />
     <link rel="stylesheet" type="text/css" href="/first/Public/css/icons.css" />
-    
-    
-    
+
+
+
     <!-- libraries -->
     <link href="/first/Public/css/lib/select2.css" type="text/css" rel="stylesheet" />
     <link href="/first/Public/css/lib/bootstrap-wysihtml5.css" type="text/css" rel="stylesheet" />
     <link href="/first/Public/css/lib/uniform.default.css" type="text/css" rel="stylesheet" />
-    
+
     <link href="/first/Public/css/lib/bootstrap.datepicker.css" type="text/css" rel="stylesheet" />
     <link href="/first/Public/css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
-    
-    
-    
-    
-     <link href="/first/Public/css/more.css" type="text/css" rel="stylesheet" />
-     
 
-    
+
+
+
+     <link href="/first/Public/css/more.css" type="text/css" rel="stylesheet" />
+
+
+
     <!-- this page specific styles -->
     <link rel="stylesheet" href="/first/Public/css/compiled/user-list.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/first/Public/css/compiled/form-showcase.css" type="text/css" media="screen" />
-    
+
 		<!-- scripts -->
     <script src="/first/Public/js/wysihtml5-0.3.0.js"></script>
     <script src="/first/Public/js/jquery-latest.js"></script>
@@ -48,7 +48,7 @@
 
 
     <!-- open sans font -->
-    
+
     <script type="text/javascript">
         $(function () {
 
@@ -179,7 +179,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
-                        Your account
+                        <?php echo ($username); ?>
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -196,7 +196,7 @@
                     </a>
                 </li>
                 <li class="settings hidden-phone">
-                    <a href="signin.html" role="button">
+                    <a href="<?php echo U('Login/logout');?>" role="button">
                         <i class="icon-share-alt"></i>
                     </a>
                 </li>
@@ -239,11 +239,11 @@
             <li>
                 <a class="dropdown-toggle" href="#">
                     <i class="icon-edit"></i>
-                    <span>Forms</span>
+                    <span>房源管理</span>
                     <i class="icon-chevron-down"></i>
                 </a>
                 <ul class="submenu">
-                    <li><a href="form-showcase.html">Form showcase</a></li>
+                    <li><a href="form-showcase.html">房源列表</a></li>
                     <li><a href="form-wizard.html">Form wizard</a></li>
                 </ul>
             </li>

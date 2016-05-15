@@ -1,0 +1,1822 @@
+[ 2016-05-14T18:32:13+08:00 ] ::1 /first/m.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\IndexController.class.php 第 4 行.
+NOTIC: [8] unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 0 of 6101 bytes D:\WWW\first\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+ERR: SQLSTATE[42000] [1049] Unknown database 'p2p'
+NOTIC: [8] Use of undefined constant ONETHINK_VERSION - assumed 'ONETHINK_VERSION' D:\WWW\first\ThinkPHP\View\Public\exception.html 第 50 行.
+
+[ 2016-05-14T18:34:24+08:00 ] ::1 /first/m.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\IndexController.class.php 第 4 行.
+NOTIC: [8] unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 0 of 6101 bytes D:\WWW\first\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0283s ]
+SQL: SELECT `type`,`name`,`value` FROM `thinkoao_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-14T18:34:25+08:00 ] ::1 /first/index.php?s=/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2016-05-14T18:34:45+08:00 ] ::1 /first/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0180s ]
+SQL: SELECT `id`,`username`,`password`,`salt`,`email`,`mobile`,`truename`,`qq`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`audit_power`,`status`,`login_error_num`,`login_error_times` FROM `thinkoao_admin` WHERE `username` = 'wangmode' AND `status` > 0 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+
+[ 2016-05-14T19:05:28+08:00 ] ::1 /first/index.php?s=/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2016-05-14T19:06:38+08:00 ] ::1 /first/index.php?s=/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-05-14T19:07:21+08:00 ] ::1 /first/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0141s ]
+SQL: SELECT `id`,`username`,`password`,`salt`,`email`,`mobile`,`truename`,`qq`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`audit_power`,`status`,`login_error_num`,`login_error_times` FROM `thinkoao_admin` WHERE `username` = 'wangmode' AND `status` > 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `thinkoao_admin` SET `login_count`=login_count+1,`last_login_time`='1463224040',`last_login_ip`='0' WHERE `id` = 4 [ RunTime:0.0709s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: error D:\WWW\first\Application\Runtime\Cache\Admin\c3fe809fc7a1750a72bcea1661c34661.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2016-05-14T19:07:23+08:00 ] ::1 /first/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2016-05-14T19:07:33+08:00 ] ::1 /first/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000510s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000835s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2016-05-14T19:09:03+08:00 ] ::1 /first/index.php/Admin/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0327s ]
+SQL: SELECT * FROM `thinkoao_member` ORDER BY reg_time desc  [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001488s ]
+
+[ 2016-05-14T19:09:13+08:00 ] ::1 /first/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001148s ]
+
+[ 2016-05-14T19:09:47+08:00 ] ::1 /first/index.php/Admin/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `thinkoao_member` ORDER BY reg_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001340s ]
+
+[ 2016-05-14T19:09:50+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0446s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2016-05-14T19:10:27+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001128s ]
+
+[ 2016-05-14T19:12:17+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2016-05-14T19:29:30+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0877s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001173s ]
+
+[ 2016-05-14T19:35:33+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001311s ]
+
+[ 2016-05-14T19:37:48+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0575s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2016-05-14T19:39:35+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001301s ]
+
+[ 2016-05-14T19:39:51+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001162s ]
+
+[ 2016-05-14T19:40:57+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0329s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2016-05-14T19:42:43+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2016-05-14T19:58:57+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001554s ]
+
+[ 2016-05-14T19:59:23+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0865s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001978s ]
+
+[ 2016-05-14T19:59:43+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0366s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2016-05-14T20:00:05+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2016-05-14T20:00:25+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0988s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001418s ]
+
+[ 2016-05-14T20:02:11+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001985s ]
+
+[ 2016-05-14T20:03:59+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0736s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2016-05-14T20:05:30+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001329s ]
+
+[ 2016-05-14T20:11:46+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2016-05-14T20:12:03+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001171s ]
+
+[ 2016-05-14T20:12:18+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2016-05-14T20:13:16+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002006s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2016-05-14T20:14:34+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2016-05-14T20:14:56+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+
+[ 2016-05-14T20:15:08+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001655s ]
+
+[ 2016-05-14T20:15:46+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2016-05-14T20:16:57+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0233s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001159s ]
+
+[ 2016-05-14T20:17:09+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0629s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+
+[ 2016-05-14T20:20:29+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2016-05-14T20:20:39+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0729s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0181s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and username=jiutu102 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE ( id!= and username=jiutu102 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and username=jiutu102 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE ( id!= and username=jiutu102 ) LIMIT 1  
+NOTIC: [8] Use of undefined constant ONETHINK_VERSION - assumed 'ONETHINK_VERSION' D:\WWW\first\ThinkPHP\View\Public\exception.html 第 50 行.
+
+[ 2016-05-14T20:22:20+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0082s ]
+NOTIC: [8] Undefined variable: id D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `thinkoao_member` WHERE ( id= ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `thinkoao_member` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Use of undefined constant ONETHINK_VERSION - assumed 'ONETHINK_VERSION' D:\WWW\first\ThinkPHP\View\Public\exception.html 第 50 行.
+
+[ 2016-05-14T20:22:54+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001281s ]
+
+[ 2016-05-14T20:23:00+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0096s ]
+ERR: 1054:Unknown column 'jiutu102' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE ( id!=29 and username=jiutu102 ) LIMIT 1  
+ERR: 1054:Unknown column 'jiutu102' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE ( id!=29 and username=jiutu102 ) LIMIT 1  
+NOTIC: [8] Use of undefined constant ONETHINK_VERSION - assumed 'ONETHINK_VERSION' D:\WWW\first\ThinkPHP\View\Public\exception.html 第 50 行.
+
+[ 2016-05-14T20:24:00+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0654s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2016-05-14T20:24:06+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE `id` = 29 AND `username` = 'jiutu102' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+
+[ 2016-05-14T20:24:46+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001844s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2016-05-14T20:24:51+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: where D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE `username` = 'jiutu102' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+
+[ 2016-05-14T20:25:12+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2016-05-14T20:25:18+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0143s ]
+NOTIC: [8] Undefined variable: where D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE `username` = 'jiutu102' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+
+[ 2016-05-14T20:25:19+08:00 ] ::1 /first/index.php/Admin/Public/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+ERR: 无法加载控制器:Public
+NOTIC: [8] Use of undefined constant ONETHINK_VERSION - assumed 'ONETHINK_VERSION' D:\WWW\first\ThinkPHP\View\Public\exception.html 第 50 行.
+
+[ 2016-05-14T20:25:27+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001658s ]
+
+[ 2016-05-14T20:26:19+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2016-05-14T20:26:23+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0896s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0095s ]
+NOTIC: [8] Undefined variable: where D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE `username` = 'jiutu102' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0070s ]
+
+[ 2016-05-14T20:26:51+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0799s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0487s ]
+NOTIC: [8] Undefined variable: where D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE `username` = 'jiutu102' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-14T20:27:07+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0109s ]
+NOTIC: [8] Undefined variable: where D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE `username` = 'jiutu102' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-14T20:27:26+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0112s ]
+NOTIC: [8] Undefined variable: where D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE `username` = 'jiutu102' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-14T20:28:31+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001431s ]
+
+[ 2016-05-14T20:28:37+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0124s ]
+NOTIC: [8] Undefined variable: where D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE ( id!=29 and username='jiutu102' ) LIMIT 1   [ RunTime:0.0205s ]
+NOTIC: [8] Undefined variable: member_mod D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 52 行.
+
+[ 2016-05-14T20:29:07+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001295s ]
+
+[ 2016-05-14T20:29:12+08:00 ] ::1 /first/index.php/Admin/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0103s ]
+NOTIC: [8] Undefined variable: where D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `thinkoao_member` WHERE ( id!=29 and username='jiutu102' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate D:\WWW\first\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\first\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `thinkoao_member` SET `username`='jiutu102',`area_sheng`='13',`area_shi`='219',`area_xian`='1385',`email`='6436556@qq.com',`mobile`='15831995737',`address`='dbgdgdg',`status`='1' WHERE `id` = 29 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: error D:\WWW\first\Application\Runtime\Cache\Admin\c3fe809fc7a1750a72bcea1661c34661.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Undefined variable: info D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014724s ]
+NOTIC: [8] Undefined variable: area_sheng D:\WWW\first\Application\Runtime\Cache\Admin\615a4d9a13eca73e3f56e9489b97f800.php 第 342 行.
+NOTIC: [8] Undefined variable: area_shi D:\WWW\first\Application\Runtime\Cache\Admin\615a4d9a13eca73e3f56e9489b97f800.php 第 342 行.
+NOTIC: [8] Undefined variable: area_xian D:\WWW\first\Application\Runtime\Cache\Admin\615a4d9a13eca73e3f56e9489b97f800.php 第 342 行.
+NOTIC: [8] Undefined variable: address D:\WWW\first\Application\Runtime\Cache\Admin\615a4d9a13eca73e3f56e9489b97f800.php 第 364 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027647s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.028036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2016-05-14T20:29:14+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2016-05-14T20:29:22+08:00 ] ::1 /first/index.php/Admin/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `thinkoao_member` ORDER BY reg_time desc  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001288s ]
+
+[ 2016-05-14T20:29:25+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+
+[ 2016-05-14T20:36:41+08:00 ] ::1 /first/index.php/Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008846s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.1288s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `thinkoao_config`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 182 行.
+NOTIC: [8] Undefined variable: WEB_SITE_TITLE D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 329 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008587s ]
+
+[ 2016-05-14T20:39:28+08:00 ] ::1 /first/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001359s ]
+
+[ 2016-05-14T20:39:33+08:00 ] ::1 /first/index.php/Admin/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `thinkoao_member` ORDER BY reg_time desc  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2016-05-14T20:39:37+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0456s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2016-05-14T20:39:41+08:00 ] ::1 /first/index.php/Admin/Member/edit/id/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2016-05-14T20:40:10+08:00 ] ::1 /first/index.php/Admin/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with that of Admin\Controller\BaseController::index() D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `thinkoao_member` ORDER BY reg_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+

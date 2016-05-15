@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class MemberController extends BaseController {
+class HomeController extends BaseController {
     public function index(){
       $member = M('member')->order('reg_time desc')->select();
       $this->assign('list',$member);

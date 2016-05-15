@@ -1,0 +1,14 @@
+[ 2016-05-15T17:32:14+08:00 ] 127.0.0.1 /first/Public/images/pass.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+NOTIC: [8] Use of undefined constant ONETHINK_VERSION - assumed 'ONETHINK_VERSION' D:\WWW\first\ThinkPHP\View\Public\exception.html 第 50 行.
+
+[ 2016-05-15T17:39:47+08:00 ] ::1 /first/Public/images/pass.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+ERR: 无法加载模块:Public
+NOTIC: [8] Use of undefined constant ONETHINK_VERSION - assumed 'ONETHINK_VERSION' D:\WWW\first\ThinkPHP\View\Public\exception.html 第 50 行.
+

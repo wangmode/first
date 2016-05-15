@@ -305,6 +305,7 @@
     </div>
     <!-- end sidebar -->
 
+<script src="/first/Public/js/jquery.ld.js"></script>
 	<!-- main container -->
     <div class="content">
 
@@ -334,11 +335,13 @@
                                 <div class="span7 field-box">
                                     <label>姓名:</label>
                                     <input class="span9" type="text" name="username" value="<?php echo ($username); ?>"/>
-                                    
-                                    <area></area>
-                                    
                                 </div>
-
+								<div class="span7 field-box">
+                                    <label>地区:</label>
+                                    <div class="ui-select span4">
+                                    <script type="text/javascript">$(function(){$(".area_area").ld({ajaxOptions: {"url":"/first/index.php/Home/Ajax/linkarea.html"},"defaultParentId" : 1,texts : [<?php echo ($area_sheng); ?>,<?php echo ($area_shi); ?>,<?php echo ($area_xian); ?>],style:{"width" : 75}});})</script><select class="area_area ui-select" name="area_sheng" id="area_sheng"><option value="">请选择省</option></select><select class="area_area ui-select" name="area_shi" id="area_shi"><option value="">请选择市</option></select><select class="area_area ui-select" name="area_xian" id="area_xian"><option value="">请选择县</option></select>
+                                    </div>
+                                </div>
                                  <?php if(empty($id)): ?><div class="span12 field-box">
                                     <label>密码:</label>
                                     <input class="span7" type="password" name="password" />
@@ -347,20 +350,6 @@
                                     <label>确认密码:</label>
                                     <input class="span7" type="password" name="repassword"/>
                                 </div><?php endif; ?>
-                                <div class="span12 field-box">
-                                    <label>地区:</label>
-                                    <div class="ui-select span3">
-                                        <select>
-                                            <option value="AK" />石家庄
-                                            <option value="HI" />夏威夷
-                                            <option value="CA" />巴厘岛
-                                            <option value="NV" />Nevada
-                                            <option value="OR" />Oregon
-                                            <option value="WA" />Washington
-                                            <option value="AZ" />Arizona
-                                        </select>
-                                    </div>
-                                </div>
                                 <div class="span7 field-box" style="margin-top:10px">
                                     <label>Email:</label>
                                     <input class="span9" type="text" value="<?php echo ($email); ?>" name="email"/>
@@ -389,6 +378,7 @@
                                     </div>
                                 </div>
                                 <div class="span11 field-box actions">
+                                	<input type="hidden" value="<?php echo ($id); ?>" name='id'/>
                                     <input type="submit" class="btn-glow primary span1_2" value="确认" />
                                     <input type="button" value="取消" class="btn-flat info span1_2" onclick="javascript:history.back(-1);return false;"/>
                                 </div>

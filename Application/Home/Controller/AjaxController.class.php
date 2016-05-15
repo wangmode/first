@@ -18,10 +18,11 @@ class AjaxController extends BaseController{
     	$data_type = "json";if(empty($pid))return false;
     	if(!empty($gettype)){$data_type = $gettype;}
         $cachename="linkarea".$pid.$data_type;
-		echo 111;exit;
+		//echo $cachename;exit;
         $cachecontent=S($cachename);
         if($cachecontent){echo $cachecontent;exit;}
 		$liandong=getcache('Area');
+		//print_r($liandong);exit;
     	if($data_type == "json"){
     		$json_str = "[";$json = array();
     		foreach($liandong as $row){

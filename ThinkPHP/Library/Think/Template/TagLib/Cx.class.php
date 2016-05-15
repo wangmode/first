@@ -578,7 +578,7 @@ class Cx extends TagLib {
         $level   	=!empty($tag['level'])?$tag['level']:'';
 		$width		=!empty($tag['width'])?$tag['width']:'75';
 		$title      =!empty($tag['title'])?$tag['title']:'请选择';
-        $class      =!empty($tag['class'])?$tag['class']:'form-control selinkagea';
+        $class      =!empty($tag['class'])?$tag['class']:'ui-select';
 		$notitle    =!empty($tag['notitle'])?$tag['notitle']:'';		
 		$ldclass=$id.'_area';$parseStr='';
 		if(!$notitle){$infotitle=array("省","市","县");

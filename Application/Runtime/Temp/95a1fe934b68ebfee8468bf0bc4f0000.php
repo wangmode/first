@@ -1,5 +1,5 @@
 <?php
-//000000000000a:117:{s:14:"WEB_SITE_TITLE";s:4:"vvvv";s:20:"WEB_SITE_DESCRIPTION";s:27:"汉潮P2P信贷管理系统";s:16:"WEB_SITE_KEYWORD";s:41:"汉潮P2P,P2P信贷,P2P信贷管理系统";s:14:"WEB_SITE_CLOSE";s:1:"1";s:16:"CONFIG_TYPE_LIST";s:74:"0:数字,
+//000000000000a:117:{s:14:"WEB_SITE_TITLE";s:28:"汉潮-P2P信贷管理系统";s:20:"WEB_SITE_DESCRIPTION";s:27:"汉潮P2P信贷管理系统";s:16:"WEB_SITE_KEYWORD";s:41:"汉潮P2P,P2P信贷,P2P信贷管理系统";s:14:"WEB_SITE_CLOSE";s:1:"1";s:16:"CONFIG_TYPE_LIST";s:74:"0:数字,
 1:字符,
 2:文本,
 3:数组,
@@ -8,7 +8,7 @@
 6:图片";s:12:"WEB_SITE_ICP";s:527:"<span style="border:none;">Copyright © 2015 汉潮P2P信贷管理系统 All rights reserved</span>
 <span>石家庄久途网络科技有限公司</span>
 <span>冀ICP备13018346号</span>
-<div class="footer_verification fn_clear"><a class="credibility" href="#" target="_blank"></a><a class="trust" href="#" target="_blank"></a><a class="internet" href="#" target="_blank"></a><a class="itrust" href="#" target="_blank"></a><a class="norton" href="#" target="_blank"></a> <a class="police" href="#" target="_blank"></a></div>";s:18:"DB_SQL_BUILD_CACHE";s:4:"TRUE";s:19:"DB_SQL_BUILD_LENGTH";s:2:"20";s:17:"CONFIG_GROUP_LIST";s:84:"1:基本,
+<div class="footer_verification fn_clear"><a class="credibility" href="#" target="_blank"></a><a class="trust" href="#" target="_blank"></a><a class="internet" href="#" target="_blank"></a><a class="itrust" href="#" target="_blank"></a><a class="norton" href="#" target="_blank"></a> <a class="police" href="#" target="_blank"></a></div>";s:18:"DB_SQL_BUILD_CACHE";s:4:"TRUE";s:19:"DB_SQL_BUILD_LENGTH";s:2:"20";s:17:"CONFIG_GROUP_LIST";s:91:"1:基本,
 2:内容,
 8:借款,
 3:用户,

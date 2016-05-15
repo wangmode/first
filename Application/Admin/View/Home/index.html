@@ -1,0 +1,144 @@
+<include file="Public/header" />
+	<!-- main container -->
+    <div class="content">
+
+        <!-- settings changer -->
+        <div class="skins-nav">
+            <a href="#" class="skin first_nav selected">
+                <span class="icon"></span><span class="text">Default</span>
+            </a>
+            <a href="#" class="skin second_nav" data-file="__PUBLIC__/css/skins/dark.css">
+                <span class="icon"></span><span class="text">Dark skin</span>
+            </a>
+        </div>
+
+        <div class="container-fluid">
+            <div id="pad-wrapper" class="users-list">
+                <div class="row-fluid header">
+                    <h3>房源列表</h3>
+                    <div class="span10 pull-right">
+                        <input type="text" class="span5 search" placeholder="Type a user's name..." />
+                        <div class="ui-dropdown">
+                            <div class="head" data-toggle="tooltip" title="Click me!">
+                                Filter users
+                                <i class="arrow-down"></i>
+                            </div>
+                            <div class="dialog">
+                                <div class="pointer">
+                                    <div class="arrow"></div>
+                                    <div class="arrow_border"></div>
+                                </div>
+                                <div class="body">
+                                    <p class="title">
+                                        Show users where:
+                                    </p>
+                                    <div class="form">
+                                        <select>
+                                            <option />用户名
+                                            <option />邮箱
+                                            <option />Number of orders
+                                            <option />Signed up
+                                            <option />Last seen
+                                        </select>
+                                        <select>
+                                            <option />is equal to
+                                            <option />is not equal to
+                                            <option />is greater than
+                                            <option />starts with
+                                            <option />contains
+                                        </select>
+                                        <input type="text" />
+                                        <a class="btn-flat small">Add filter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="{:U('Member/add')}" class="btn-flat success pull-right">
+                            <span>&#43;</span>
+                            添加用户
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Users table -->
+                <div class="row-fluid table">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+								 <th width=30><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
+								 <th  width=50>ID
+								 </th>
+                                <th class="span4 sortable">
+                                    用户名
+                                </th>
+                                <th class="span3 sortable">
+                                    <span class="line"></span>注册时间
+                                </th>
+																<th class="span3 sortable">
+                                    <span class="line"></span>最后登录
+                                </th>
+                                <th class="span3 sortable">
+                                    <span class="line"></span>邮箱
+                                </th>
+																<th class="span3 sortable">
+                                    <span class="line"></span>状态
+                                </th>
+																<th class="span3 sortable align-right">
+                                    <span class="line"></span>操作
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <!-- row -->
+                        <tr class="first">
+                        <!-- row -->
+						<volist name="list" id="vo">
+						<td>
+								<input type="checkbox" value="{$val.id}" name="id[]">
+						</td>
+						<td>
+								<span class="subtext">{$vo.id}</span>
+						</td>
+                        <td>
+                              <a href="user-profile.html" class="name">{$vo.username}</a>
+                          </td>
+                          <td>
+                            {$vo.reg_time|date="Y-m-d H:i:s",###}
+                          </td>
+						  <td>
+                            {$vo.last_login|date="Y-m-d H:i:s",###}
+                          </td>
+                          <td>
+                              <a href="#">{$vo.email}</a>
+                          </td>
+													<td>
+                              <if condition="$vo['status'] eq 1">可用<else/>禁用</if>
+                          </td>
+													<td class="align-right">
+                              <a href="{:U('Member/edit',array('id'=>$vo['id']))}">编辑</a>
+															<a href="#">删除</a>
+                          </td>
+                        </tr>
+											</volist>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination pull-right">
+                    <ul>
+                        <li><a href="#">&#8249;</a></li>
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&#8250;</a></li>
+                    </ul>
+                </div>
+                <!-- end users table -->
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+
+		<include file="Public/footer" />

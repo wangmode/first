@@ -1,0 +1,3 @@
+<?php
+//000000000000s:513:"[{"region_id":"864","region_name":"\u79d1\u5c14\u6c81\u533a"},{"region_id":"865","region_name":"\u79d1\u5c14\u6c81\u5de6\u7ffc\u4e2d\u65d7"},{"region_id":"866","region_name":"\u79d1\u5c14\u6c81\u5de6\u7ffc\u540e\u65d7"},{"region_id":"867","region_name":"\u5f00\u9c81\u53bf"},{"region_id":"868","region_name":"\u5e93\u4f26\u65d7"},{"region_id":"869","region_name":"\u5948\u66fc\u65d7"},{"region_id":"870","region_name":"\u624e\u9c81\u7279\u65d7"},{"region_id":"871","region_name":"\u970d\u6797\u90ed\u52d2\u5e02"}]";
+?>

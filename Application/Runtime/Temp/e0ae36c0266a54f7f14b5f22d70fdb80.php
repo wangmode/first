@@ -1,0 +1,3 @@
+<?php
+//000000000000s:490:"[{"region_id":"178","region_name":"\u957f\u6625\u5e02"},{"region_id":"179","region_name":"\u5409\u6797\u5e02"},{"region_id":"180","region_name":"\u56db\u5e73\u5e02"},{"region_id":"181","region_name":"\u8fbd\u6e90\u5e02"},{"region_id":"182","region_name":"\u901a\u5316\u5e02"},{"region_id":"183","region_name":"\u767d\u5c71\u5e02"},{"region_id":"184","region_name":"\u677e\u539f\u5e02"},{"region_id":"185","region_name":"\u767d\u57ce\u5e02"},{"region_id":"186","region_name":"\u5ef6\u8fb9"}]";
+?>

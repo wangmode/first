@@ -9,6 +9,8 @@
 // | Author: WangMode <WangMode@163.cn>
 // +----------------------------------------------------------------------
 
+//Unisoft常量定义
+const UniSoft_CACHE_MODEL ='Area';
 //生成密码
 function creatpwd($pwd, $str = ''){
   if(!$str){$str = randStr;}
@@ -171,4 +173,60 @@ function data_auth_sign($data){
     $code = http_build_query($data); //url编码并生成query字符串
     $sign = sha1($code); //生成签名
     return $sign;
+}
+
+//获取缓存
+function getcache($name=''){
+    if(empty($name))return false;
+    $cachedata=F($name);
+    if($cachedata)return $cachedata;
+    else{return savecache($name,1);}
+}//保存缓存
+function savecache($name = '', $type = ''){    
+	$cache_model=explode(',',UniSoft_CACHE_MODEL);//后台缓存模型
+	if(!in_array($name,$cache_model))return false;
+    if(!defined('RUNTIME_FILE'))define('RUNTIME_FILE',APP_PATH.'Runtime/');    
+    if(file_exists(RUNTIME_FILE.'common~runtime.php'))unlink(RUNTIME_FILE.'common~runtime.php');
+    $Model = M($name);$list=$data= array();
+    $allpas=array('BorrowCategory','ArticleCat');    
+    if ($name == 'User')
+	{
+		$list = $Model->where("status=1")->field(true)->select();		
+		foreach ($list as $v){unset($v['password']);$data[$v['id']] = $v;}F($name, $data);
+	}else if (in_array($name,array('Payment','Oauth')))
+	{
+		$list = $Model->where("status=1")->field(true)->select();
+		foreach ($list as $v){$data[$v['code']] = $v;}F($name, $data);
+	}else if ($name == 'AuthRule')
+	{
+       $list = $Model->field(true)->order('sort,id desc')->select();
+       foreach ($list as $key => $val){$data[$val['id']] = $val;}F($name, $data);
+       $AdminGroup = M('AuthGroup')->where('status=1')->field('id,rules')->select();
+       foreach ($AdminGroup as $groupValue) {
+				$ruleCache = F("admin_rule_".$groupValue['id']."");
+				if (empty($ruleCache)){if(empty($groupValue['rules']))$groupValue['rules']=0;
+				$ruleData = $Model->where("id IN(".$groupValue['rules'].")  AND status=1")->order('sort,id desc')->getField('id,name,title,show_status,type,condition,pid,sort');
+				F("admin_rule_".$groupValue['id'],$ruleData);
+                }unset($ruleCache);
+	   }unset($AdminGroup);
+	}
+    else
+	{
+       $allfields=$Model->getDbFields();
+	   $pkid = $Model->getPk();
+       $order='';
+       if(in_array('sort',$allfields))$order.='sort,';
+       $order.=$name=="Area"?$pkid:$pkid.' desc';
+	   $list = $Model->field($allfields)->order($order)->select();
+	   foreach ($list as $key => $val)
+	   {
+	   	   $data[$val[$pkid]] = $val;
+           if(in_array($name,$allpas)){
+            $data[$val[$pkid]]['allparent']=getallparent($val[$pkid],'',$name);
+            $data[$val[$pkid]]['allson']=getallson($val[$pkid],$name);
+           }
+	   }F($name, $data);
+	}
+    if(!empty($type)){unset($list);return $data;}
+	else{unset($list,$data);return true;}
 }
