@@ -49,20 +49,21 @@ class MemberController extends BaseController {
       if($count>0){
         $this->error('用户名已经存在！');
       }
-		 if (false === $member->create($postdata)) {
-                $this->error($member->getError());
-            }
-            $result = $member->save();
-            unset($postdata);
-            if (false !== $result) {
-                $this->success('更新成功', '', '', 'edit');
-            } else {
-                $this->error('更新失败');
-            }
+	  if (false === $member->create($postdata)) {
+        $this->error($member->getError());
+      }
+      $result = $member->save();
+      unset($postdata);
+      if (false !== $result) {
+        $this->success('更新成功', '', '', 'edit');
+      } else {
+      $this->error('更新失败');
+    }
   }else{
         $info = M('Member')->where('id='.$id)->find();
-  }
-    $this->assign($info);
-    $this->display();
+        $this->assign($info);
+        $this->display();
+    }
+
   }
 }

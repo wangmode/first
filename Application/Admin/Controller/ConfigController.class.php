@@ -15,8 +15,8 @@ class ConfigController extends FirstController {
         $this->model = D('Config');
     }
     public function index(){
-	$info = M('Config')->select();
-	$this->assign($info);
+	$info = M('Config')->where(array('status'=>1))->field('id,name,title,group,extra,value,remark,type')->order('sort')->select();
+	$this->assign('list',$info);
     $this->display();
 	}
     //配置列表

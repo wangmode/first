@@ -28,6 +28,7 @@ i.shuffle{
   	line-height: 14px;
   	vertical-align: text-top;
 }
+
 i.setting{
 	background: url("../img/btn-setting.png") no-repeat;
 	display: inline-block;
@@ -106,10 +107,9 @@ i.table-delete{
 	background: url("../img/ico-table-delete.png") no-repeat;
 	width: 12px;
 	height: 12px;
-	display: inline-block;	
+	display: inline-block;
 	margin-top: 1px;
   	*margin-right: .3em;
   	line-height: 14px;
   	vertical-align: text-top;
 }
-

@@ -339,7 +339,7 @@
 								<div class="span7 field-box">
                                     <label>地区:</label>
                                     <div class="ui-select span4">
-                                    <script type="text/javascript">$(function(){$(".area_area").ld({ajaxOptions: {"url":"/first/index.php/Home/Ajax/linkarea.html"},"defaultParentId" : 1,texts : [<?php echo ($area_sheng); ?>,<?php echo ($area_shi); ?>,<?php echo ($area_xian); ?>],style:{"width" : 75}});})</script><select class="area_area ui-select" name="area_sheng" id="area_sheng"><option value="">请选择省</option></select><select class="area_area ui-select" name="area_shi" id="area_shi"><option value="">请选择市</option></select><select class="area_area ui-select" name="area_xian" id="area_xian"><option value="">请选择县</option></select>
+                                    <script type="text/javascript">$(function(){$(".area_area").ld({ajaxOptions: {"url":"/first/m.php/Home/Ajax/linkarea.html"},"defaultParentId" : 1,texts : [<?php echo ($area_sheng); ?>,<?php echo ($area_shi); ?>,<?php echo ($area_xian); ?>],style:{"width" : 75}});})</script><select class="area_area ui-select" name="area_sheng" id="area_sheng"><option value="">请选择省</option></select><select class="area_area ui-select" name="area_shi" id="area_shi"><option value="">请选择市</option></select><select class="area_area ui-select" name="area_xian" id="area_xian"><option value="">请选择县</option></select>
                                     </div>
                                 </div>
                                  <?php if(empty($id)): ?><div class="span12 field-box">

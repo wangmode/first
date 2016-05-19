@@ -2,62 +2,19 @@
 	<!-- main container -->
     <div class="content">
 
-        <!-- settings changer -->
-        <div class="skins-nav">
-            <a href="#" class="skin first_nav selected">
-                <span class="icon"></span><span class="text">Default</span>
-            </a>
-            <a href="#" class="skin second_nav" data-file="css/skins/dark.css">
-                <span class="icon"></span><span class="text">Dark skin</span>
-            </a>
-        </div>
-
         <div class="container-fluid">
             <div id="pad-wrapper" class="form-page">
                 <div class="row-fluid form-wrapper">
                     <!-- left column -->
                     <div class="span8 column">
-                        <form />
+                        <form >
+                        	<volist name="list" id="config" key="k">
                             <div class="field-box">
-                                <label>网站标题:</label>
-                                <input class="span8 inline-input" type="text" value="{$WEB_SITE_TITLE}"/>
-                            </div>
-                             <div class="field-box">
-                                <label>网站关键词:</label>
-                                <input class="span8 inline-input" type="text" />
-                            </div>
-                             <div class="field-box">
-                                <label>版权信息:</label>
-                                <input class="span8 inline-input" type="text" />
-                            </div>
-                            <div class="field-box">
-                                <label>Inline Password:</label>
-                                <input class="span8 inline-input" type="password" value="blablabla" />
-                            </div>
-                            <div class="field-box">
-                                <label>Read only:</label>
-                                <input class="span8 inline-input" type="text" readonly value="read only input" />
-                            </div>
-                            <div class="field-box">
-                                <label>With tooltip:</label>
-                                <input class="span8 inline-input" data-toggle="tooltip" data-trigger="focus" title="Please insert a valid email address" data-placement="right" type="text" />
-                            </div>
-                            <div class="field-box">
-                                <label>Predefined value:</label>
-                                <div class="predefined">
-                                    <span class="value">http://</span>
-                                    <input class="span8 inline-input" type="text" />
-                                </div>
-                            </div>
-                            <div class="field-box">
-                                <label>With max length:</label>
-                                <input class="span8 inline-input" type="text" placeholder="max 20 characters here" maxlength="20" />
-                            </div>
-                            <div class="field-box">
-                                <label>Textarea:</label>
-                                <textarea class="span8" rows="4"></textarea>
+                                <label>{$config.title}:</label>
+                                <input class="span8 inline-input" type="text" value="{$config.value}"/>
                             </div>
 
+							</volist>
 
                         </form>
                     </div>

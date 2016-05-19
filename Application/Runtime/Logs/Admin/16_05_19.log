@@ -1,0 +1,864 @@
+[ 2016-05-19T15:44:45+08:00 ] ::1 /first/m.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with Admin\Controller\BaseController::index($model = '') D:\WWW\first\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-05-19T15:44:46+08:00 ] ::1 /first/index.php?s=/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T15:46:18+08:00 ] ::1 /first/index.php?s=/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-19T15:51:20+08:00 ] ::1 /first/index.php?s=/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-19T16:00:37+08:00 ] ::1 /first/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`username`,`password`,`salt`,`email`,`mobile`,`truename`,`qq`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`audit_power`,`status`,`login_error_num`,`login_error_times` FROM `thinkoao_admin` WHERE `username` = 'wangmode' AND `status` > 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `thinkoao_admin` SET `login_count`=login_count+1,`last_login_time`='1463644835',`last_login_ip`='0' WHERE `id` = 5 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: error D:\WWW\first\Application\Runtime\Cache\Admin\c3fe809fc7a1750a72bcea1661c34661.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T16:00:40+08:00 ] ::1 /first/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with Admin\Controller\BaseController::index($model = '') D:\WWW\first\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T16:34:31+08:00 ] ::1 /first/m.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with Admin\Controller\BaseController::index($model = '') D:\WWW\first\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-19T16:34:41+08:00 ] ::1 /first/m.php/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with Admin\Controller\BaseController::index($model = '') D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `thinkoao_member` ORDER BY reg_time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T16:34:46+08:00 ] ::1 /first/m.php/Member/edit/id/30.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with Admin\Controller\BaseController::index($model = '') D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `thinkoao_member` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T16:34:47+08:00 ] ::1 /first/m.php/Home/Ajax/linkarea.html?parent_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\HomeController::index() should be compatible with Admin\Controller\BaseController::index($model = '') D:\WWW\first\Application\Admin\Controller\HomeController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: 非法操作:Ajax
+NOTIC: [8] Use of undefined constant ONETHINK_VERSION - assumed 'ONETHINK_VERSION' D:\WWW\first\ThinkPHP\View\Public\exception.html 第 50 行.
+
+[ 2016-05-19T16:35:01+08:00 ] ::1 /first/m.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with Admin\Controller\BaseController::index($model = '') D:\WWW\first\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T16:35:11+08:00 ] ::1 /first/m.php/Member/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with Admin\Controller\BaseController::index($model = '') D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0060s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `thinkoao_member` WHERE ( id= ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `thinkoao_member` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Use of undefined constant ONETHINK_VERSION - assumed 'ONETHINK_VERSION' D:\WWW\first\ThinkPHP\View\Public\exception.html 第 50 行.
+
+[ 2016-05-19T16:35:23+08:00 ] ::1 /first/m.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `thinkoao_config`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\94874399856847a0aef2309f9a226cc8.php 第 182 行.
+NOTIC: [8] Undefined variable: WEB_SITE_TITLE D:\WWW\first\Application\Runtime\Cache\Admin\94874399856847a0aef2309f9a226cc8.php 第 333 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-19T16:41:17+08:00 ] ::1 /first/m.php/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with Admin\Controller\BaseController::index($model = '') D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `thinkoao_member` ORDER BY reg_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T16:41:26+08:00 ] ::1 /first/m.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `thinkoao_config`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 182 行.
+NOTIC: [8] Undefined variable: WEB_SITE_TITLE D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 329 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T16:42:12+08:00 ] ::1 /first/m.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `thinkoao_config`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 182 行.
+NOTIC: [8] Undefined variable: WEB_SITE_TITLE D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T16:52:30+08:00 ] ::1 /first/m.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `thinkoao_config`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 182 行.
+NOTIC: [8] Undefined variable: name D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T16:58:31+08:00 ] ::1 /first/m.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name`,`title`,`group`,`extra`,`value`,`remark`,`type` FROM `thinkoao_config` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T17:04:15+08:00 ] ::1 /first/m.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`name`,`title`,`group`,`extra`,`value`,`remark`,`type` FROM `thinkoao_config` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-19T17:09:16+08:00 ] ::1 /first/m.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`title`,`group`,`extra`,`value`,`remark`,`type` FROM `thinkoao_config` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T17:09:20+08:00 ] ::1 /first/m.php/Config/config.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `thinkoao_config`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 182 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 405 行.
+NOTIC: [8] Undefined index: last_login_time D:\WWW\first\Application\Runtime\Cache\Admin\51d44ea0007acfd1e8f142da75500fb3.php 第 417 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T17:09:23+08:00 ] ::1 /first/m.php/Config/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name`,`type`,`title`,`group`,`extra`,`remark`,`create_time`,`update_time`,`status`,`value`,`sort` FROM `thinkoao_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\e865796d1f4e7f565b77e1d541a04b0b.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-19T17:13:17+08:00 ] ::1 /first/m.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `thinkoao_config` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`title`,`group`,`extra`,`value`,`remark`,`type` FROM `thinkoao_config` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\WWW\first\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-19T17:13:41+08:00 ] ::1 /first/m.php/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::index() should be compatible with Admin\Controller\BaseController::index($model = '') D:\WWW\first\Application\Admin\Controller\MemberController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `thinkoao_admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `thinkoao_admin` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `thinkoao_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `thinkoao_member` ORDER BY reg_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+NOTIC: [8] Undefined variable: val D:\WWW\first\Application\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
